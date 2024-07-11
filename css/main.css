@@ -1,0 +1,1055 @@
+@charset "utf-8";
+.inner{
+  margin: 0 auto;
+  position: relative;
+  padding: 0 20px;
+}
+
+#intro{
+  width: 100%;
+  /* height: 850px; */
+  height: 100vh;
+  background-color: #6660E8;
+}
+
+
+#intro .frame{
+  width: 300px;
+  height: 300px;
+  border: 3px solid #fff;
+  margin: 0 auto;
+}
+
+#intro .frame .bar{
+  height: 35px;
+  background-color: #fff;
+  position: relative;
+}
+
+#intro .frame .bar .bar-tit{
+  margin: auto 20px;
+  line-height: 35px;
+}
+
+#intro .frame .bar .bar-tit img{
+  width: 26px;
+  height: 22px;
+  margin-top: 5px;
+}
+
+#intro .frame-wrap p{
+  margin-top: 30px;
+  font-size: 2.4rem;
+  text-align: center;
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+}
+
+#intro .frame .bar .bar-tit span{
+  color: #6660E8;
+}
+
+#intro .frame .bar .frame-button{
+  width: 22px;
+  height: 22px;
+  display: flex;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  justify-content: end;
+}
+
+#intro .frame .bar .frame-button img{
+  width: 100%;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+#intro .main-icon01{
+  padding-top: 140px;
+}
+
+#intro .main-icon01 ul, #intro .main-icon02 ul{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#intro .main-icon02 ul{
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+#intro .main-icon01 li{
+  margin: 0 35px 30px 0;
+}
+
+#intro .main-icon01 li:nth-child(3), #intro .main-icon01 li:nth-child(5){
+  margin-right: 0;
+}
+
+#intro .main-icon01 li > div, #intro .main-icon02 li > div{
+  margin: 0 auto 10px;
+}
+
+#intro .main-icon01 li p, #intro .main-icon02 li p{
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+}
+
+#intro .main-icon01 .icon-pb{
+  width: 34px;
+  height: 30px;
+}
+
+#intro .main-icon01 .icon-ui{
+  width: 17px;
+  height: 30px;
+}
+
+#intro .main-icon01 .icon-bran{
+  width: 30px;
+  height: 30px;
+}
+
+#intro .main-icon01 .icon-edi{
+  width: 15px;
+  height: 30px;
+}
+
+#intro .main-icon01 .icon-art{
+  width: 24px;
+  height: 30px;
+  position: relative;
+}
+
+#intro .main-icon01 .icon-art img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#intro .main-icon02 ul li:first-child{
+  position: relative;
+}
+
+#intro .main-icon02 .icon-idea{
+  width: 36px;
+  height: 30px;
+}
+
+/*full idea*/
+#intro .main-icon02 .full-idea{
+  width: 55px;
+  height: 20px;
+  padding: 3px 0;
+  background-color: #E1B4FF;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: none;
+}
+
+#intro .main-icon02 ul li:first-child:hover .full-idea{
+  display: block;
+}
+
+
+#intro .main-icon02 .icon-stor{
+  width: 23px;
+  height: 30px;
+}
+
+#intro .main-icon01 img, #intro .main-icon02 img{
+  height: 100%;
+}
+
+#intro .main-icon01 .icon-move .icon-art img:nth-child(1){
+  display: none;
+}
+
+#intro .main-icon01 .icon-move:hover .icon-art img:nth-child(1){
+  display: block;
+}
+
+#intro .main-icon01 .icon-move:hover .icon-art img:nth-child(2){
+  display: none;
+}
+
+#intro .main-icon01 li:nth-child(1):hover img{
+  transform: rotate(45deg);
+}
+
+#intro .main-icon01 li:nth-child(4):hover img{
+  transform: rotate(45deg);
+}
+
+
+
+
+/*gnb css 시작*/
+
+#gnb{
+  width:100%;
+  height:70px;
+  z-index:100;
+  font-family: "Press Start 2P", 'NeoDunggeunmoPro-Regular', sans-serif;
+  background-color: #E1B4FF;
+  position: fixed;
+  bottom: 0;
+}
+
+#gnb .gnb-inner{
+  position: relative;
+  padding: 0 20px;
+}
+
+#gnb .menu-left{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+#gnb .menu-left li .gnb-img-box{
+  position: relative;
+  width: 25px;
+  height: 20px;
+  margin: 0 auto 5px;
+}
+
+#gnb .menu-left li .gnb-img-box img{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#gnb .menu-left li .gnb-img-box img.img-hover{
+  display: none;
+}
+
+#gnb .menu-left li:first-child a img{
+  width: 30px; 
+  height: auto;
+}
+
+#gnb .menu-left li a{
+  display:block; 
+  color:#fff; 
+  padding-right: 20px;
+  font-size: 1.3rem;
+}
+
+#gnb .menu-left li:first-child a{
+  margin-right: 0;
+}
+
+#gnb .menu-left li a span{
+  text-align: center;
+  display: block;
+}
+
+#gnb .menu-left li a:hover{
+  color:#FBFF4E;
+}
+
+#gnb .menu-left li a:hover .img{
+  display: none;
+}
+
+#gnb .menu-left li a:hover .img-hover{
+  display: block;
+}
+
+#gnb .menu-left li a img{
+  width: 100%; 
+}
+
+.menu-right{
+  display: none;
+}
+/*gnb css 끝*/
+
+
+
+/*about css 시작*/
+#about{
+  width: 100%;
+}
+
+#about .inner{
+  padding: 50px 20px 70px;
+  height: 100%;
+}
+
+#about .about-tit-wrap{
+  width: 100%;
+}
+
+#about .about-tit-wrap .about-tit{
+  width: 390px;
+  height: 50px;
+  border: 3px solid #6660E8;
+  border-radius: 25px;
+  margin: 0 auto 20px;
+  position: relative;
+}
+
+#about .about-tit-wrap .about-tit .about-tit-txt{
+  width: 280px;
+  overflow: hidden;
+  position: absolute;
+  top: 8px;
+  left: 75px;
+}
+
+#about .about-tit-wrap .about-tit .about-tit-txt span{
+  font-family: 'NeoDunggeunmoPro-Regular', sans-serif;;
+  font-size: 2.4rem;
+  color: #6660E8;
+  white-space: nowrap;
+  animation: move-left 10s linear infinite;
+  display: inline-block;
+}
+
+#about .about-tit-wrap .about-tit .about-tit-img{
+  width: 30px;
+  height: 26px;
+  margin: 7px 15px 0 30px;
+  display: inline-block;
+}
+
+#about .about-tit-wrap .about-tit .about-tit-img img{
+  width: 100%;
+}
+
+#about .about-tit-wrap .about-sub-txt{
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  margin: 0 0 20px 40px;
+}
+
+#about .about-tit-wrap .about-sub-txt span{
+  display: block;
+}
+
+#about .about-tit-wrap .about-sub-txt span.enter{
+  margin-bottom: 10px;
+}
+
+about-wrap-left{
+  position: relative;
+}
+
+#about .about-me{
+  position: relative;
+  margin-top: 40px;
+}
+
+#about .about-me img{
+  width: 100%;
+}
+
+#about .about-me .medal{
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 30px;
+  height: 57px;
+}
+
+#about .about-me .sun{
+  position: absolute;
+  top: 90px;
+  left: 245px;
+  width: 72px;
+  height: 15px;
+}
+
+#about .about-me .arrow{
+  position: absolute;
+  top: 130px;
+  left: 385px;
+  width: 35px;
+  height: 29px;
+}
+
+#about .about-me-img{
+  width: 270px;
+  height: 260px;
+  border: 3px solid #6660E8;
+  margin-left: 12px;
+}
+
+#about .about-tmi01{
+  font-family: "Noto Sans KR", sans-serif;
+  position: absolute;
+  top: 480px;
+  left: 220px;
+}
+
+#about .about-tmi01 .tmi01{
+  width: 170px;
+  height: 115px;
+  background-color: #6660E8;
+  border: 3px solid #fff;
+  position: absolute;
+  cursor: pointer;
+}
+
+#about .about-tmi01 .tmi01 .txt-box{
+  margin-left: 15px;
+}
+
+#about .about-tmi01 .tmi01 .txt-box p{
+  color: #fff;
+  font-size: 2.2rem;
+  margin-top: 18px;
+}
+
+#about .about-tmi01 .tmi01 span{
+  color: #fff;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 1.5rem;
+}
+
+#about .about-tmi01 .tmi01 span:hover{
+  color: #FBFF4E;
+  font-weight: bold;
+}
+
+#about .about-tmi01 .tmi01.box01{
+  z-index: 3;
+}
+
+#about .about-tmi01 .tmi01.box02{
+  z-index: 2;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#about .about-tmi01 .tmi01.box03{
+  z-index: 1;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+#about .about-tmi01 .tmi01.box01 img{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 18px;
+}
+
+
+/*about-profile css*/
+#about .profile-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+#about .profile-wrap .profile, #about .profile-wrap .others{
+  font-family: "Press Start 2P", sans-serif;
+}
+
+#about .profile-wrap > div{
+  height: 50px;
+  border-radius: 25px;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.profile{
+  width: 50%;
+  background-color: #000;
+  color: #fff;
+  margin-right: 10px;
+  font-size: 2.2rem;
+}
+
+.others{
+  width: 40%;
+  background-color: #fff;
+  border: 2px solid #000;
+  font-size: 1.4rem;
+}
+
+.name, .birth, .phone, .mail{
+  background-color: #fff;
+  border: 2px solid #6660E8;
+  font-size: 2rem;
+  color: #6660E8;
+}
+
+.name{
+  width: 25%;
+  margin-right: 10px;
+}
+
+.birth{
+  width: 43%;
+}
+
+.phone{
+  width: 50%;
+  margin-right: 10px;
+}
+
+.mail{
+  width: 70%;
+  position: relative;
+}
+
+.mail .icon-mail{
+  position: absolute;
+  bottom: 38px;
+  left: 25px;
+  width: 32px;
+  height: 21px;
+}
+
+.mail .icon-mail img{
+  width: 100%;
+}
+
+.blank{
+  background-color: #E1B4FF;
+}
+
+.blank.b1{
+  width: 20%;
+  margin-right: 10px;
+}
+
+.blank.b2{
+  width: 12%;
+  margin-right: 10px;
+}
+
+.blank.b3{
+  width: 26%;
+}
+
+.blank.b4{
+  width: 20%;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+.blank.b4 img{
+  width: 28px;
+  height: 28px;
+}
+
+
+
+/*about-right css 시작*/
+.tmi02{
+  display: none;
+}
+
+/*about-frame 공통부분*/
+.about-frame{
+  width: 100%;
+  margin: 35px auto 0;
+}
+
+.about-frame .bar .bar-tit span{
+  color: #fff;
+}
+
+.about-frame .bar{
+  height: 35px;
+  position: relative;
+}
+
+.about-frame .bar .bar-tit{
+  margin: auto 20px;
+  line-height: 35px;
+}
+
+.about-frame .bar .bar-tit img{
+  margin-top: 5px;
+}
+
+.about-frame .bar .frame-button{
+  width: 22px;
+  height: 22px;
+  display: flex;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  justify-content: end;
+}
+
+.about-frame .bar .frame-button img{
+  width: 100%;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.about-frame p{
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 35px 0 0 30px;
+  font-size: 2rem;
+}
+
+.about-frame p:last-child{
+  margin-bottom: 35px;
+}
+
+
+/*about-fram f1*/
+.about-frame.f1{
+  border: 3px solid #E1B4FF;
+  margin-top: 60px;
+}
+
+.about-frame.f1 .bar{
+  background-color: #E1B4FF;
+}
+
+.about-frame.f1 .bar .bar-tit img{
+  width: 23px;
+  height: 26px;
+}
+
+
+/*about-fram f2*/
+.about-frame.f2, .about-frame.f3{
+  border: 3px solid #6660E8;
+}
+
+.about-frame.f2 .bar, .about-frame.f3 .bar{
+  background-color: #6660E8;
+}
+
+.about-frame.f2 .bar .bar-tit img{
+  width: 27px;
+  height: 27px;
+}
+
+
+/*about-fram f3*/
+.about-frame.f3 .bar .bar-tit img{
+  width: 13px;
+  height: 27px;
+}
+
+.about-frame.f3 p{
+  font-family: "Press Start 2P", 'NeoDunggeunmoPro-Regular', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*중간 break*/
+@media screen and (min-width: 700px) {
+  #intro .main-icon01 li:nth-child(3){
+    margin-right: 35px;
+  }
+
+  #intro .main-icon01 {
+    padding-top: 140px;
+}
+}
+
+
+
+
+@media screen and (min-width: 1024px){
+
+  #intro .inner{
+    padding: 0 50px;
+    height: 100%;
+  }
+
+  /*#intro .frame-wrap{
+    position: absolute;
+    top: 110px;
+    left: 75px;
+  }*/
+
+  #intro .frame{
+    width: 480px;
+    height: 463px;
+    border: 3px solid #fff;
+  }
+
+  #intro .frame .bar{
+    height: 45px;
+  }
+  
+  #intro .frame .bar .bar-tit{
+    margin: auto 30px;
+    line-height: 45px;
+  }
+  
+  #intro .frame .bar .bar-tit img{
+    width: 30px;
+    height: 25px;
+    margin-top: 8px;
+  }
+
+  #intro .frame .bar .bar-tit span{
+    font-size: 2.2rem;
+  }
+  
+  #intro .frame-wrap p{
+    margin-top: 40px;
+    font-size: 3.8rem;
+  }
+
+  #intro .main-icon01{
+    position: absolute;
+    top: 50%;
+    right: 130px;
+    padding-top: 0;
+    transform: translateY(-50%);
+  }
+
+  #intro .main-icon01 ul li:last-child{
+    margin-bottom: 0;
+  }
+
+  #intro .main-icon01 ul{
+    display: block;
+  }
+
+  #intro .main-icon01 li, #intro .main-icon01 li:nth-child(3){
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  #intro .main-icon01 li p, #intro .main-icon02 li p{
+    font-size: 1.6rem;
+  }
+
+  #intro .main-icon02{
+    position: absolute;
+    top: 76%;
+    width: 670px;
+  }
+
+  /*full-idea*/
+  #intro .main-icon02 .full-idea{
+    width: 90px;
+    height: 34px;
+    padding: 7px;
+    background-color: #E1B4FF;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    top: 45px;
+    left: 50px;
+  }
+
+  #intro .frame-wrap{
+    position: absolute;
+    top: 10%;
+    left: 70px;
+  }
+
+  #intro .frame .bar .frame-button{
+    width: 26px;
+    height: 26px;
+    top: 8px;
+    right: 15px;
+  }
+  
+  #intro .frame .bar .frame-button img{
+    margin-left: 10px;
+  }
+
+  #intro .main-icon01 .icon-pb{
+    width: 79px;
+    height: 70px;
+  }
+  
+  #intro .main-icon01 .icon-ui{
+    width: 40px;
+    height: 70px;
+  }
+  
+  #intro .main-icon01 .icon-bran{
+    width: 70px;
+    height: 70px;
+  }
+  
+  #intro .main-icon01 .icon-edi{
+    width: 35px;
+    height: 70px;
+  }
+  
+  #intro .main-icon01 .icon-art{
+    width: 56px;
+    height: 70px;
+    position: relative;
+  }
+  
+  #intro .main-icon01 .icon-art img{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  #intro .main-icon02 .icon-idea{
+    width: 84px;
+    height: 70px;
+  }
+  
+  #intro .main-icon02 .icon-stor{
+    width: 51px;
+    height: 70px;
+  }
+
+
+
+
+
+  /*gnb css 시작*/
+  #gnb .gnb-inner{
+    padding: 0 50px;
+  }
+
+  #gnb .menu-left li:first-child{
+    margin-right: 60px;
+  }
+
+  #gnb .menu-left li:first-child a img{
+    width: 45px; 
+    height: auto;
+  }
+
+  #gnb .menu-left li a{
+    font-size: 1.8rem;
+  }
+
+  #gnb .menu-left li a img{
+    width: 35px; 
+    height: auto;
+  }
+
+  #gnb .menu-left li a span{
+    display: inline-block;
+  }
+
+  #gnb .menu-left li .gnb-img-box{
+    position: relative;
+    width: 35px;
+    height: 22px;
+    display: inline-block;
+  }
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 1200px){
+  .inner{
+    padding: 0 100px;
+  }
+
+  #intro{
+    width: 100%;
+    background-color: #6660E8;
+  }
+
+  #intro .frame-wrap{
+    top: 47%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+
+  #intro .frame-wrap p{
+    font-size: 4.5rem;
+  }
+
+  #intro .main-icon01{
+    top: 47%;
+    left: 100px;
+    transform: translateY(-50%);
+    width: 310px;
+  }
+
+  #intro .main-icon01 ul {
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+
+  #intro .main-icon01 li p, #intro .main-icon02 li p{
+    font-size: 1.4rem;
+  }
+
+  #intro .main-icon01 li, #intro .main-icon01 li:nth-child(3){
+    margin-bottom: 60px;
+    margin-right: 70px;
+  }
+
+  #intro .main-icon02{
+    top: 42%;
+    right: 170px;
+    width: 100px;
+  }
+
+  #intro .main-icon02 ul{
+    display: block;
+  }
+
+  #intro .main-icon02 ul li:last-child{
+    margin-top: 60px;
+  }
+
+  #intro .main-icon01 .icon-pb{
+    width: 68px;
+    height: 60px;
+  }
+  
+  #intro .main-icon01 .icon-ui{
+    width: 34px;
+    height: 60px;
+  }
+  
+  #intro .main-icon01 .icon-bran{
+    width: 60px;
+    height: 60px;
+  }
+  
+  #intro .main-icon01 .icon-edi{
+    width: 30px;
+    height: 60px;
+  }
+  
+  #intro .main-icon01 .icon-art{
+    width: 48px;
+    height: 60px;
+    position: relative;
+  }
+  
+  #intro .main-icon01 .icon-art img{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  #intro .main-icon02 .icon-idea{
+    width: 84px;
+    height: 70px;
+  }
+  
+  #intro .main-icon02 .icon-stor{
+    width: 51px;
+    height: 70px;
+  }
+
+  /*full-idea*/
+  #intro .main-icon02 .full-idea{
+    width: 90px;
+    height: 34px;
+    padding: 5px;
+    background-color: #E1B4FF;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    top: 45px;
+    left: 50px;
+  }
+
+
+  
+  #gnb{
+    height: 90px;
+  }
+
+  #gnb .gnb-inner{
+    padding: 0 100px;
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+  }
+
+  #gnb .menu-left{
+    height: 90px;
+  }
+
+  #gnb .menu-left li a{
+    font-size: 1.8rem;
+  }
+
+  #gnb .menu-left li a img{
+    width: 40px;
+    height: auto;
+  }
+
+  #gnb .menu-left li:first-child a img{
+    width: 50px;
+    height: auto;
+  }
+
+  #gnb .menu-left li .gnb-img-box{
+    width: 40px;
+    height: 32px;
+    margin-bottom: 0;
+  }
+
+  #gnb .menu-right{
+    display: flex;
+    margin: auto 0;
+  }
+
+  #gnb .menu-right .menu-search-wrap .menu-search-box{
+    width: 240px;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    margin-right: 20px;
+  }
+
+  #gnb .menu-right .menu-search-wrap{
+    position: relative;
+  }
+  
+  #gnb .menu-right .menu-search-wrap img{
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 40px;
+    top: 8px;
+  }
+
+  #gnb .menu-right p{
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  #gnb .menu-right span{
+    color: #fff;
+  }
+
+  
+
+
+}
