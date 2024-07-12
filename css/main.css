@@ -902,6 +902,7 @@ about-wrap-left{
 }
 
 #contact .cont-wrap{
+  width: 75%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -920,22 +921,125 @@ about-wrap-left{
 
 
 #contact .how-wrap{
-  display: flex;
+  position: relative;
+  background-color: #fff;
+  border: 2px solid #6660E8;
+  height: 60px;
 }
 
 #contact .how-wrap p{
-  padding: 15px 30px;
+  color: #6660E8;
+  font-size: 1.7rem;
+  white-space: nowrap;
+  line-height: 55px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+#contact .how-cont li{
   background-color: #fff;
   border: 2px solid #6660E8;
+  height: 50px;
   color: #6660E8;
-  font-size: 1.8rem;
+  line-height: 50px;
+  padding-left: 20px;
+  margin-top: -2px;
 }
 
 #contact .how-wrap .how-button{
+  position: absolute;
+  top: -2px;
+  right: -2px;
   width: 60px;
   height: 60px;
   background: #6660E8 url(../img/icon_down.png) no-repeat center / 40% auto;
 }
+
+#contact .bot-top{
+  position: relative;
+  bottom: 150px;
+}
+
+#contact .bot-top .line{
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+}
+
+#contact .bot-top .top-button{
+  display: block;
+  position: absolute;
+  top: -30px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+#contact .bot-top .top-button img{
+  width: 100%;
+}
+
+#contact .bot-top .top-button span{
+  font-size: 1.4rem;
+  color: #6660E8;
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  right: 16px;
+}
+
+/*반짝이 위치*/
+.biln01{
+  width: 35px;
+  height: auto;
+  position: absolute;
+  top: -40px;
+  left: 10px;
+}
+
+.biln02{
+  width: 35px;
+  height: auto;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.biln03{
+  width: 35px;
+  height: auto;
+  position: absolute;
+  top: 5px;
+  left: 0; display: none;
+}
+
+.biln04{
+  width: 35px;
+  height: auto;
+  position: absolute;
+  top: 5px;
+  left: 0; display: none;
+}
+
+.biln05{
+  width: 35px;
+  height: auto;
+  position: absolute;
+  top: 5px;
+  left: 0; display: none;
+}
+
+.biln06{
+  width: 35px;
+  height: auto;
+  position: absolute;
+  top: 5px;
+  left: 0; display: none;
+}
+
+
+
 
 
 
@@ -1329,8 +1433,13 @@ about-wrap-left{
   }
 
 
+  #contact .cont-wrap {
+    width: 50%;
+  }
   
-  
+  #contact .how-cont li {
+    padding-left: 60px;
+  }
 
 }
 
@@ -1685,6 +1794,15 @@ about-wrap-left{
     width: 70%;
   }
   
+
+  /*contact*/
+  #contact .cont-wrap {
+    width: 30%;
+  }
+  
+  #contact .how-cont li {
+    padding-left: 90px;
+  }
 
 
 }
