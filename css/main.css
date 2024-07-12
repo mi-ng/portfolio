@@ -66,7 +66,7 @@
 }
 
 #intro .main-icon01{
-  padding-top: 140px;
+  padding-top: 110px;
 }
 
 #intro .main-icon01 ul, #intro .main-icon02 ul{
@@ -236,10 +236,13 @@
   height: auto;
 }
 
+#gnb .menu-left li{
+  padding-right: 5px;
+}
+
 #gnb .menu-left li a{
   display:block; 
   color:#fff; 
-  padding-right: 20px;
   font-size: 1.3rem;
 }
 
@@ -281,7 +284,7 @@
 }
 
 #about .inner{
-  padding: 50px 20px 70px;
+  padding: 50px 20px 100px;
   height: 100%;
 }
 
@@ -290,7 +293,7 @@
 }
 
 #about .about-tit-wrap .about-tit{
-  width: 390px;
+  width: 100%;
   height: 50px;
   border: 3px solid #6660E8;
   border-radius: 25px;
@@ -299,7 +302,7 @@
 }
 
 #about .about-tit-wrap .about-tit .about-tit-txt{
-  width: 280px;
+  width: 77%;
   overflow: hidden;
   position: absolute;
   top: 8px;
@@ -307,7 +310,7 @@
 }
 
 #about .about-tit-wrap .about-tit .about-tit-txt span{
-  font-family: 'NeoDunggeunmoPro-Regular', sans-serif;;
+  font-family: 'NeoDunggeunmoPro-Regular', sans-serif;
   font-size: 2.4rem;
   color: #6660E8;
   white-space: nowrap;
@@ -371,8 +374,8 @@ about-wrap-left{
 
 #about .about-me .arrow{
   position: absolute;
-  top: 130px;
-  left: 385px;
+  top: 20px;
+  left: 340px;
   width: 35px;
   height: 29px;
 }
@@ -641,6 +644,10 @@ about-wrap-left{
 
 
 /*about-fram f3*/
+.about-frame.f3{
+  position: relative;
+}
+
 .about-frame.f3 .bar .bar-tit img{
   width: 13px;
   height: 27px;
@@ -651,11 +658,228 @@ about-wrap-left{
 }
 
 
+.about-side-bar{
+  position: absolute;
+  right: 0;
+  height: 95%;
+}
+
+.about-side-bar .side-bar-base{
+  width: 13px;
+  height: 100%;
+  background-color: #E1B4FF;
+}
+
+.about-side-bar .side-bar-per{
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #6660E8;
+}
 
 
+/*skill css 시작*/
+.skill-wrap{
+  padding: 35px 0;
+}
+
+.sk-f-wrap{
+  display: flex;
+  justify-content: center;
+}
+
+.sk-f-wrap .sk-img-box{
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.sk-f-wrap .sk-img-box img{
+  width: 100%;
+  border-radius: 8px;
+}
+
+.sk-txt-box{
+  margin: 0 0 15px 15px;
+}
+
+.skill-wrap p{
+  font-size: 1.6rem;
+  color: #6660E8;
+  margin: 0 0 5px 0;
+}
+
+.skill-bar{
+  position: relative;
+  width: 300px;
+  height: 18px;
+}
+
+.skill-bar .bar-base{
+  width: 300px;
+  height: 18px;
+  border: 2px solid #6660E8;
+  position: absolute;
+}
+
+.skill-bar .bar-per{
+  width: 280px;
+  height: 18px;
+  background-color: #6660E8;
+  /*border: 2px solid #6660E8;*/
+  position: absolute;
+}
+
+.sk-blen .sk-txt-box{
+  margin-bottom: 0;
+}
+
+.skill-bar.bar1 .bar-per{
+  width: 260px;
+}
+
+.skill-bar.bar2 .bar-per,
+.skill-bar.bar9 .bar-per,
+.skill-bar.bar10 .bar-per{
+  width: 240px;
+}
+
+.skill-bar.bar3 .bar-per{
+  width: 220px;
+}
+
+.skill-bar.bar5 .bar-per{
+  width: 260px;
+}
+
+.skill-bar.bar8 .bar-per{
+  width: 250px;
+}
 
 
+/*portfolio css 시작*/
+#portfolio{
+  width: 100%;
+}
 
+#portfolio .inner{
+  height: 100%;
+  background: #ffcfe4 url(../img/bg_portfolio.png) no-repeat top left / cover;
+  position: relative;
+}
+
+#portfolio .tab{
+  width: 100%;
+  text-align: center;
+}
+
+#portfolio .tab .tab-btn{
+  padding: 30px 0;
+  font-family: 'NeoDunggeunmoPro-Regular', sans-serif;
+}
+
+#portfolio .tab .tab-btn ul{
+  display: flex;
+  overflow: auto;
+}
+
+#portfolio .tab .tab-btn ul li{
+  width:23%;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+#portfolio .tab .tab-btn ul li a{
+  display: block;
+  color: #6660E8;
+  padding-top: 60%;
+  background: url(../img/folder-close.png) no-repeat center top / 60% auto;
+}
+
+#portfolio .tab .tab-btn ul li:hover a,
+.tab-btn ul li.active a{
+  background-image: url(../img/folder-open.png);
+}
+
+#portfolio .popup-frame{
+  width: 80%;
+  background-color: #E1B4FF;
+  border: 3px solid #6660E8;
+  margin: 0 auto;
+}
+
+#portfolio .popup-frame .popup-bar{
+  height: 20px;
+  background-color: #6660E8;
+  position: relative;
+}
+
+#portfolio .popup-frame .popup-bar img{
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+}
+
+#portfolio .popup-frame .txt-box{
+  margin: 10px;
+}
+
+#portfolio .popup-frame .txt-box p{
+  color: #6660E8;
+  margin-bottom: 6px;
+}
+
+#portfolio .popup-frame .txt-box .pop-button{
+  width: 20%;
+  height: 25px;
+  border: 2px solid #6660E8;
+  color: #6660E8;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 3px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#portfolio .popup-frame .txt-box .pop-button:hover{
+  background-color: #6660E8;
+  color: #E1B4FF;
+  border: 2px solid #6660E8;
+}
+
+#portfolio .tab .tab-con{
+  padding: 30px 30px 100px;
+}
+
+#portfolio .tab .tab-con .left-box{
+  display: none;
+}
+
+#portfolio .tab .tab-con .right-box{
+  width: 100%;
+}
+
+#portfolio .tab .tab-con .right-box img{
+  width: 100%;
+}
+
+#portfolio .tab .tab-con .tab-con-b-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#portfolio .tab .tab-con .tab-con-b-wrap .tab-con-button{
+  background-color: #FFADE8;
+  border: 2px solid #6660E8;
+  padding: 8px 15px 4px;
+  margin: 10px 10px 0 0;
+  color: #6660E8;
+}
 
 
 
@@ -669,8 +893,14 @@ about-wrap-left{
 
   #intro .main-icon01 {
     padding-top: 140px;
+  }
+
+  #intro .frame-wrap p {
+    margin-top: 40px;
+    font-size: 3rem;
+  }
 }
-}
+
 
 
 
@@ -679,7 +909,7 @@ about-wrap-left{
 
   #intro .inner{
     padding: 0 50px;
-    height: 100%;
+    height: 100vh;
   }
 
   /*#intro .frame-wrap{
@@ -820,8 +1050,114 @@ about-wrap-left{
     width: 51px;
     height: 70px;
   }
+  
+  
+  /*about css 시작*/
+  #about .inner {
+    padding: 100px 50px;
+    height: 100%;
+  }
+  
+  .about-f-wrap{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-wrap-left{
+    width: 45%;
+  }
+
+  #about .about-me .arrow {
+    left: 390px;
+  }
+
+  #about .about-tmi01 {
+    font-family: "Noto Sans KR", sans-serif;
+    position: absolute;
+    top: 520px;
+    left: 260px;
+  }
+
+  #about .about-tmi01 .tmi01 {
+    width: 175px;
+    height: 120px;
+  }
+
+  .about-wrap-right{
+    width: 50%;
+    position: relative;
+  }
+
+  .tmi02{
+    display: block;
+  }
+
+  #about .about-tmi02{
+    font-family: "Noto Sans KR", sans-serif;
+    width: 200px;
+    height: 200px;
+  }
+  
+  #about .about-tmi02 .tmi02{
+    width: 180px;
+    height: 180px;
+    background-color: #fff;
+    border: 2px solid #000;
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  #about .about-tmi02 .tmi02 .txt-box{
+    margin: 43px 35px;
+  }
+
+  #about .about-tmi02 .tmi02.box03 .txt-box{
+    margin: 48px 24px;
+  }
 
 
+  #about .about-tmi02 .tmi02.box02 .txt-box{
+    margin: 55px 35px;
+    line-height: 1.5;
+  }
+  
+  #about .about-tmi02 .tmi02 .txt-box p{
+    color: #000;
+    font-size: 2.2rem;
+  }
+
+  #about .about-tmi02 .tmi02.box03 .txt-box p{
+    color: #000;
+    font-size: 2rem;
+  }
+
+  
+  #about .about-tmi02 .tmi02:hover p,
+  #about .about-tmi02 .tmi02.box03:hover p{
+    color: #6660E8;
+  }
+
+  #about .about-tmi02 .tmi02:hover{
+    border: 2px solid #6660E8;
+  }
+  
+  #about .about-tmi02 .tmi02.box01{
+    z-index: 3;
+  }
+  
+  #about .about-tmi02 .tmi02.box02{
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  #about .about-tmi02 .tmi02.box03{
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
 
 
 
@@ -859,9 +1195,11 @@ about-wrap-left{
     display: inline-block;
   }
 
+
+
+  
+
 }
-
-
 
 
 
@@ -979,7 +1317,98 @@ about-wrap-left{
   }
 
 
-  
+
+
+  /*about css 시작*/
+  #about .inner{
+    padding: 100px 100px 120px;
+  }
+
+  #about .about-me-img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .about-wrap-left{
+    width: 40%;
+  }
+
+  #about .about-me .arrow {
+    width: 42px;
+    top: 50px;
+    left: 470px;
+  }
+
+  .about-wrap-right{
+    width: 55%;
+    position: relative;
+  }
+
+  #about .about-tmi01 {
+    top: 540px;
+    left: 280px;
+  }
+
+  #about .about-tmi01 .tmi01{
+    padding: 5px 18px;
+  }
+
+  #about .about-tmi01 .tmi01 {
+    width: 250px;
+    height: 150px;
+  }
+
+  #about .about-tmi01 .tmi01 .txt-box p {
+    font-size: 2.5rem;
+    margin-top: 25px;
+  }
+
+  #about .about-tmi01 .tmi01 span {
+    margin-left: 5px;
+    margin-right: 10px;
+    font-size: 1.8rem;
+  }
+
+  #about .about-tmi01 .tmi01.box01 img {
+    width: 40px;
+    height: 40px;
+    top: 15px;
+    right: 20px;
+  }
+
+  #about .profile-wrap {
+    padding-top: 80px;
+  }
+
+  #about .about-me .sun {
+    left: 295px;
+    width: 75px;
+    height: 18px;
+  }
+
+  #about .about-me .medal {
+    top: 40px;
+    left: -6px;
+    width: 40px;
+    height: 92px;
+  }
+
+  .skill-wrap{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .about-side-bar .side-bar-base {
+    width: 13px;
+    height: 96%;
+    background-color: #E1B4FF;
+  }
+
+
+
+
+  /*gnb css 시작*/
   #gnb{
     height: 90px;
   }
@@ -995,8 +1424,16 @@ about-wrap-left{
     height: 90px;
   }
 
+  #gnb .menu-left li{
+    padding-right: 20px;
+  }
+
   #gnb .menu-left li a{
     font-size: 1.8rem;
+  }
+
+  #gnb .menu-left li:first-child{
+    padding-right: 0;
   }
 
   #gnb .menu-left li a img{
@@ -1052,4 +1489,12 @@ about-wrap-left{
   
 
 
+}
+
+
+@media screen and (min-width : 1620px) {
+  #about .about-tmi01 {
+    top: 505px;
+    left: 450px;
+  }
 }
