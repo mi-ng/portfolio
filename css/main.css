@@ -776,30 +776,30 @@ about-wrap-left{
   text-align: center;
 }
 
-#portfolio .tab .tab-btn{
+.tab-btn{
   padding: 30px 0;
   font-family: 'NeoDunggeunmoPro-Regular', sans-serif;
 }
 
-#portfolio .tab .tab-btn ul{
+.tab-btn ul{
   display: flex;
   overflow: auto;
 }
 
-#portfolio .tab .tab-btn ul li{
+.tab-btn ul li{
   width:23%;
   flex-shrink: 0;
   text-align: center;
 }
 
-#portfolio .tab .tab-btn ul li a{
+.tab-btn ul li a{
   display: block;
   color: #6660E8;
   padding-top: 60%;
   background: url(../img/folder-close.png) no-repeat center top / 60% auto;
 }
 
-#portfolio .tab .tab-btn ul li:hover a,
+.tab-btn ul li:hover a,
 .tab-btn ul li.active a{
   background-image: url(../img/folder-open.png);
 }
@@ -887,6 +887,34 @@ about-wrap-left{
   color: #FFADE8;
 }
 
+#contact{
+  width: 100%;
+  height: 100vh;
+
+}
+
+#contact .inner{
+  position: relative;
+  height: 100%;
+    background-color: #E1B4FF;
+}
+
+#contact .cont-wrap{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#contact .thanks p{
+  font-size: 2.5rem;
+  color: #6660E8;
+  text-align: center;
+}
+
+
+
+
 
 
 
@@ -907,6 +935,11 @@ about-wrap-left{
   }
 
 }
+
+
+
+
+
 
 
 
@@ -1281,6 +1314,12 @@ about-wrap-left{
 
 
 
+
+
+
+
+
+
 @media screen and (min-width: 1200px){
   .inner{
     padding: 0 100px;
@@ -1587,9 +1626,15 @@ about-wrap-left{
     padding: 0 0 20px;
   }
 
-  #portfolio .tab .tab-btn ul li a {
+  .tab-btn ul li a {
     background: url(../img/folder-close.png) no-repeat center top / 65% auto;
   }
+  
+  .tab-btn ul li:hover a,
+  .tab-btn ul li.active a{
+    background-image: url(../img/folder-open.png);
+  }
+
 
   #portfolio .tab .tab-con{
     width: 55%;
@@ -1620,6 +1665,9 @@ about-wrap-left{
 
 
 }
+
+
+
 
 
 @media screen and (min-width : 1620px) {
