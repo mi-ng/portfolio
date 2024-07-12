@@ -15,7 +15,7 @@ $(document).ready(function(){
   });
 
   $('.about-tmi01 .tmi01.box03').click(function(){
-    $('.tmi01').show();
+    $('.tmi02').show();
   });
 
   $('.about-tmi02 > div').click(function(){

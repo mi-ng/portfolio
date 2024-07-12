@@ -638,8 +638,8 @@ about-wrap-left{
 }
 
 .about-frame.f2 .bar .bar-tit img{
-  width: 27px;
-  height: 27px;
+  width: 24px;
+  height: 24px;
 }
 
 
@@ -874,11 +874,17 @@ about-wrap-left{
 }
 
 #portfolio .tab .tab-con .tab-con-b-wrap .tab-con-button{
+  display: block;
   background-color: #FFADE8;
   border: 2px solid #6660E8;
   padding: 8px 15px 4px;
   margin: 10px 10px 0 0;
   color: #6660E8;
+}
+
+#portfolio .tab .tab-con .tab-con-b-wrap .tab-con-button:hover{
+  background-color: #6660E8;
+  color: #FFADE8;
 }
 
 
@@ -899,6 +905,7 @@ about-wrap-left{
     margin-top: 40px;
     font-size: 3rem;
   }
+
 }
 
 
@@ -1197,6 +1204,76 @@ about-wrap-left{
 
 
 
+  /*portfolio*/
+  #portfolio .tab{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #portfolio .tab-popup{
+    width: 30%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+  }
+
+  #portfolio .popup-frame{
+    width: 100%;
+  }
+
+  #portfolio .tab .tab-btn {
+    width: 32%;
+    padding: 0;
+    margin: auto 0;
+  }
+  
+  #portfolio .tab-btn ul{
+    flex-wrap: wrap;
+  }
+  
+  #portfolio .tab .tab-btn ul li {
+    text-align: center;
+    width: calc(100% / 2);
+    padding: 0 0 25px;
+  }
+
+  #portfolio .tab .tab-con{
+    width: 65%;
+    position: relative;
+  }
+
+  #portfolio .tab .tab-con li .left-box{
+    position: absolute;
+    top: 215px;
+    left: 10px;
+    width: 30%;
+  }
+
+  #portfolio .tab .tab-con li .right-box{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 65%;
+    transform: translateY(-50%);
+  }
+
+  #portfolio .tab .tab-con .left-box{
+    display: block;
+    width: 30%;
+  }
+
+  #portfolio .tab .tab-con .left-box img{
+    width: 100%;
+  }
+
+  #portfolio .tab .tab-con .right-box {
+    width: 70%;
+  }
+
+
+  
   
 
 }
@@ -1486,6 +1563,59 @@ about-wrap-left{
     color: #fff;
   }
 
+
+  /*portfolio css 시작*/
+  #portfolio .tab-popup{
+    top: 58%;
+    left: 48%;
+  }
+
+  #portfolio .popup-frame{
+    width: 310px;
+  }
+
+  #portfolio .tab .tab-btn {
+    width: 40%;
+  }
+  
+  #portfolio .tab-btn ul{
+    gap: 5px;
+  }
+  
+  #portfolio .tab .tab-btn ul li {
+    width: calc(100% / 4);
+    padding: 0 0 20px;
+  }
+
+  #portfolio .tab .tab-btn ul li a {
+    background: url(../img/folder-close.png) no-repeat center top / 65% auto;
+  }
+
+  #portfolio .tab .tab-con{
+    width: 55%;
+    position: relative;
+  }
+
+  #portfolio .tab .tab-con li .left-box{
+    width: 40%;
+    padding-right: 20px;
+  }
+
+  #portfolio .tab .tab-con li .right-box{
+    width: 60%;
+  }
+
+  #portfolio .tab .tab-con .left-box{
+    width: 30%;
+  }
+
+  #portfolio .tab .tab-con .left-box img{
+    width: 100%;
+  }
+
+  #portfolio .tab .tab-con .right-box {
+    width: 70%;
+  }
   
 
 
@@ -1496,5 +1626,14 @@ about-wrap-left{
   #about .about-tmi01 {
     top: 505px;
     left: 450px;
+  }
+
+  #portfolio .popup-frame{
+    width: 350px;
+  }
+
+  #portfolio .tab-popup{
+    top: 65%;
+    left: 48%;
   }
 }
