@@ -15,7 +15,7 @@ $(document).ready(function(){
   });
 
   $('.about-tmi01 .tmi01.box03').click(function(){
-    $('.tmi02').show();
+    $('.tmi01').show();
   });
 
   $('.about-tmi02 > div').click(function(){
@@ -33,5 +33,10 @@ $(document).ready(function(){
 
   $(".pop-button").click(function(){
     $('.tab-popup').hide();
+  });
+
+  $(".how-cont").hide();
+  $(".how-button").click(function(){
+    $(".how-cont").stop().slideToggle();
   });
 });
