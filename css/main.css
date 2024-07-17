@@ -12,10 +12,21 @@
   background-color: #6660E8;
 }
 
+#intro .inner{
+  height: 100%;
+}
+
+#intro .intro-wrap{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 #intro .frame{
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 240px;
   border: 3px solid #fff;
   margin: 0 auto;
 }
@@ -38,8 +49,8 @@
 }
 
 #intro .frame-wrap p{
-  margin-top: 30px;
-  font-size: 2.4rem;
+  margin-top: 20px;
+  font-size: 2rem;
   text-align: center;
   -webkit-text-stroke: 1px #fff;
   color: transparent;
@@ -65,9 +76,10 @@
   margin-left: 5px;
 }
 
-#intro .main-icon01{
-  padding-top: 110px;
-}
+/* #intro .main-icon01{
+  padding-top: 80px;
+  margin: 0 auto;
+} */
 
 #intro .main-icon01 ul, #intro .main-icon02 ul{
   display: flex;
@@ -77,16 +89,14 @@
 
 #intro .main-icon02 ul{
   justify-content: space-evenly;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 #intro .main-icon01 li{
-  margin: 0 35px 30px 0;
+  width: 100px;
+  margin: 0 10px 30px 10px;
 }
 
-#intro .main-icon01 li:nth-child(3), #intro .main-icon01 li:nth-child(5){
-  margin-right: 0;
-}
 
 #intro .main-icon01 li > div, #intro .main-icon02 li > div{
   margin: 0 auto 10px;
@@ -243,7 +253,7 @@
 #gnb .menu-left li a{
   display:block; 
   color:#fff; 
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 #gnb .menu-left li:first-child a{
@@ -302,7 +312,7 @@
 }
 
 #about .about-tit-wrap .about-tit .about-tit-txt{
-  width: 77%;
+  width: 70%;
   overflow: hidden;
   position: absolute;
   top: 8px;
@@ -332,7 +342,7 @@
 #about .about-tit-wrap .about-sub-txt{
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 500;
-  margin: 0 0 20px 40px;
+  margin: 0 20px 20px 20px;
 }
 
 #about .about-tit-wrap .about-sub-txt span{
@@ -374,8 +384,8 @@ about-wrap-left{
 
 #about .about-me .arrow{
   position: absolute;
-  top: 20px;
-  left: 340px;
+  top: -40px;
+  left: 280px;
   width: 35px;
   height: 29px;
 }
@@ -388,10 +398,12 @@ about-wrap-left{
 }
 
 #about .about-tmi01{
+  width: 190px;
+  height: 135px;
   font-family: "Noto Sans KR", sans-serif;
   position: absolute;
-  top: 480px;
-  left: 220px;
+  top: 520px;
+  left: 160px;
 }
 
 #about .about-tmi01 .tmi01{
@@ -682,12 +694,13 @@ about-wrap-left{
 
 /*skill css 시작*/
 .skill-wrap{
-  padding: 35px 0;
+  padding: 35px 30px 35px 15px;
 }
 
 .sk-f-wrap{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .sk-f-wrap .sk-img-box{
@@ -714,20 +727,20 @@ about-wrap-left{
 
 .skill-bar{
   position: relative;
-  width: 300px;
-  height: 18px;
+  width: 280px;
+  height: 16px;
 }
 
 .skill-bar .bar-base{
-  width: 300px;
+  width: 280px;
   height: 18px;
   border: 2px solid #6660E8;
   position: absolute;
 }
 
 .skill-bar .bar-per{
-  width: 280px;
-  height: 18px;
+  width: 95%;
+  height: 100%;
   background-color: #6660E8;
   /*border: 2px solid #6660E8;*/
   position: absolute;
@@ -738,17 +751,17 @@ about-wrap-left{
 }
 
 .skill-bar.bar1 .bar-per{
-  width: 260px;
+  width: 90%;
 }
 
 .skill-bar.bar2 .bar-per,
 .skill-bar.bar9 .bar-per,
 .skill-bar.bar10 .bar-per{
-  width: 240px;
+  width: 90%;
 }
 
 .skill-bar.bar3 .bar-per{
-  width: 220px;
+  width: 85%;
 }
 
 .skill-bar.bar5 .bar-per{
@@ -902,7 +915,7 @@ about-wrap-left{
 }
 
 #contact .cont-wrap{
-  width: 75%;
+  width: 85%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -910,13 +923,14 @@ about-wrap-left{
 }
 
 #contact .thanks p{
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: #6660E8;
   text-align: center;
 }
 
 #contact .how{
   width: 100%;
+  margin-top: 30px;
 }
 
 
@@ -929,7 +943,7 @@ about-wrap-left{
 
 #contact .how-wrap p{
   color: #6660E8;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   white-space: nowrap;
   line-height: 55px;
   padding-right: 50px;
@@ -942,8 +956,9 @@ about-wrap-left{
   height: 50px;
   color: #6660E8;
   line-height: 50px;
-  padding-left: 20px;
+  padding-left: 15px;
   margin-top: -2px;
+  font-size: 1.4rem;
 }
 
 #contact .how-wrap .how-button{
@@ -991,51 +1006,52 @@ about-wrap-left{
 
 /*반짝이 위치*/
 .biln01{
-  width: 35px;
+  width: 32px;
   height: auto;
   position: absolute;
-  top: -40px;
-  left: 10px;
+  top: -10%;
+  left: 5%;
 }
 
 .biln02{
-  width: 35px;
+  width: 20px;
   height: auto;
   position: absolute;
-  top: 5px;
-  left: 0;
+  top: -10%;
+  left: 37%;
 }
 
 .biln03{
-  width: 35px;
+  width: 13px;
   height: auto;
   position: absolute;
-  top: 5px;
-  left: 0; display: none;
+  top: -8%;
+  right: 36%;
 }
 
+
 .biln04{
-  width: 35px;
+  width: 25px;
   height: auto;
   position: absolute;
-  top: 5px;
-  left: 0; display: none;
+  top: -8%;
+  right: 5%;
 }
 
 .biln05{
-  width: 35px;
+  width: 16px;
   height: auto;
   position: absolute;
-  top: 5px;
-  left: 0; display: none;
+  top: 25%;
+  left: 17%;
 }
 
 .biln06{
-  width: 35px;
+  width: 25px;
   height: auto;
   position: absolute;
-  top: 5px;
-  left: 0; display: none;
+  top: 22%;
+  right: 14%;
 }
 
 
@@ -1053,12 +1069,16 @@ about-wrap-left{
   }
 
   #intro .main-icon01 {
-    padding-top: 140px;
+    padding-top: 80px;
   }
 
   #intro .frame-wrap p {
     margin-top: 40px;
     font-size: 3rem;
+  }
+
+  #gnb .gnb-inner{
+    padding: 0 50px;
   }
 
 }
@@ -1121,6 +1141,7 @@ about-wrap-left{
     right: 130px;
     padding-top: 0;
     transform: translateY(-50%);
+    width: auto;
   }
 
   #intro .main-icon01 ul li:last-child{
@@ -1477,6 +1498,7 @@ about-wrap-left{
     left: 100px;
     transform: translateY(-50%);
     width: 310px;
+    margin: auto 0;
   }
 
   #intro .main-icon01 ul {
