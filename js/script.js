@@ -35,8 +35,8 @@ $(document).ready(function(){
     $('.tab-popup').hide();
   });
 
-  $(".how-cont").hide();
+  $(".how-cont li").hide();
   $(".how-button").click(function(){
-    $(".how-cont").stop().slideToggle();
+    $(".how-cont li").stop().slideToggle();
   });
 });

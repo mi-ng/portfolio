@@ -419,12 +419,12 @@ about-wrap-left{
 
 #about .about-tmi01 .tmi01 .txt-box{
   margin-left: 15px;
+  margin-top: 15px;
 }
 
 #about .about-tmi01 .tmi01 .txt-box p{
   color: #fff;
   font-size: 2.2rem;
-  margin-top: 18px;
 }
 
 #about .about-tmi01 .tmi01 span{
@@ -491,14 +491,14 @@ about-wrap-left{
   background-color: #000;
   color: #fff;
   margin-right: 10px;
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .others{
   width: 40%;
   background-color: #fff;
   border: 2px solid #000;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .name, .birth, .phone, .mail{
@@ -1477,7 +1477,7 @@ about-wrap-left{
 
 
   #contact .cont-wrap {
-    width: 50%;
+    width: 45%;
   }
 
   #contact .how-wrap p {
@@ -1510,13 +1510,14 @@ about-wrap-left{
   }
 
   #intro .inner {
-    padding: 0 80px;
+    padding: 0 50px;
   }
 
   #intro .frame-wrap{
+    width: 55%;
     top: 47%;
     transform: translate(-50%, -50%);
-    left: 50%;
+    left: 56%;
   }
 
   #intro .frame-wrap p{
@@ -1525,7 +1526,7 @@ about-wrap-left{
 
   #intro .main-icon01{
     top: 47%;
-    left: 80px;
+    left: 50px;
     transform: translateY(-50%);
     width: 300px;
     /* margin: auto 0; */
@@ -1554,7 +1555,7 @@ about-wrap-left{
 
   #intro .main-icon02{
     top: 39%;
-    right: 150px;
+    right: 50px;
     width: 100px;
     left: auto;
   }
@@ -1645,8 +1646,8 @@ about-wrap-left{
 
   #about .about-me .arrow {
     width: 42px;
-    top: 50px;
-    left: 470px;
+    top: 0;
+    left: 370px;
   }
 
   .about-wrap-right{
@@ -1655,8 +1656,8 @@ about-wrap-left{
   }
 
   #about .about-tmi01 {
-    top: 540px;
-    left: 280px;
+    top: 600px;
+    left: 260px;
   }
 
   #about .about-tmi01 .tmi01{
@@ -1664,13 +1665,16 @@ about-wrap-left{
   }
 
   #about .about-tmi01 .tmi01 {
-    width: 250px;
-    height: 150px;
+    width: 230px;
+    height: 140px;
+  }
+  #about .about-tmi01 .tmi01 .txt-box{
+    margin-top: 20px;
+    margin-left: 10px;
   }
 
   #about .about-tmi01 .tmi01 .txt-box p {
     font-size: 2.5rem;
-    margin-top: 25px;
   }
 
   #about .about-tmi01 .tmi01 span {
@@ -1680,8 +1684,8 @@ about-wrap-left{
   }
 
   #about .about-tmi01 .tmi01.box01 img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     top: 15px;
     right: 20px;
   }
@@ -1747,7 +1751,7 @@ about-wrap-left{
   }
 
   #gnb .menu-left li a img{
-    width: 40px;
+    width: 100%;
     height: auto;
   }
 
@@ -1757,7 +1761,7 @@ about-wrap-left{
   }
 
   #gnb .menu-left li .gnb-img-box{
-    width: 40px;
+    width: 32px;
     height: 26px;
     margin-bottom: 0;
   }
@@ -1864,7 +1868,7 @@ about-wrap-left{
   }
   
   #contact .how-cont li {
-    padding-left: 90px;
+    padding-left: 10%;
   }
 
 
@@ -1904,5 +1908,15 @@ about-wrap-left{
   
   #gnb .menu-right .menu-search-wrap .menu-search-box {
     width: 240px;
+  }
+
+  #contact .how-cont li {
+    padding-left: 15%;
+  }
+
+  #gnb .menu-left li .gnb-img-box{
+    width: 36px;
+    height: 26px;
+    margin-bottom: 0;
   }
 }
