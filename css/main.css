@@ -1656,7 +1656,7 @@ about-wrap-left{
   }
 
   #about .about-tmi01 {
-    top: 600px;
+    top: 580px;
     left: 260px;
   }
 
@@ -1724,18 +1724,18 @@ about-wrap-left{
 
   /*gnb css 시작*/
   #gnb{
-    height: 90px;
+    height: 70px;
   }
 
   #gnb .gnb-inner{
     padding: 0 40px;
     display: flex;
-    height: 90px;
+    height: 70px;
     justify-content: space-between;
   }
 
   #gnb .menu-left{
-    height: 90px;
+    height: 70px;
   }
 
   #gnb .menu-left li{
