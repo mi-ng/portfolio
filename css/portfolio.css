@@ -1,0 +1,305 @@
+@charset "utf-8";
+.inner{
+  margin: 0 auto;
+  position: relative;
+  padding: 0 20px;
+}
+  
+#main{
+  width: 100%;
+  /* height: 850px; */
+  height: 100vh;
+  background: url(../img/pf-tn-main.png) no-repeat top left / cover;
+}
+  
+#main .inner{
+  height: 100%;
+}
+  
+/* #intro .main-wrap{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+
+/*gnb css 시작*/
+#gnb{
+  width:100%;
+  height:70px;
+  z-index:100;
+  font-family: "Press Start 2P", 'NeoDunggeunmoPro-Regular', sans-serif;
+  background-color: #6660E8;
+  position: fixed;
+  bottom: 0;
+}
+  
+#gnb .gnb-inner{
+  position: relative;
+  padding: 0 20px;
+}
+  
+#gnb .menu-left{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+  
+#gnb .menu-left li .gnb-img-box{
+  position: relative;
+  width: 25px;
+  height: 20px;
+  margin: 0 auto 5px;
+}
+  
+#gnb .menu-left li .gnb-img-box img{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#gnb .menu-left li .gnb-img-box img.img-hover{
+  display: none;
+}
+  
+#gnb .menu-left li:first-child a img{
+  width: 30px; 
+  height: auto;
+}
+  
+#gnb .menu-left li{
+  padding-right: 5px;
+}
+  
+#gnb .menu-left li a{
+  display:block; 
+  color:#fff; 
+  font-size: 1.2rem;
+}
+  
+#gnb .menu-left li:first-child a{
+  margin-right: 0;
+}
+  
+#gnb .menu-left li a span{
+  text-align: center;
+  display: block;
+}
+  
+#gnb .menu-left li a:hover{
+  color:#FBFF4E;
+}
+  
+#gnb .menu-left li a:hover .img{
+  display: none;
+}
+  
+#gnb .menu-left li a:hover .img-hover{
+  display: block;
+}
+  
+#gnb .menu-left li a img{
+  width: 100%; 
+}
+  
+.menu-right{
+  display: none;
+}
+  /*gnb css 끝*/
+
+
+
+
+
+
+
+
+
+  /*중간 break*/
+@media screen and (min-width: 650px) {
+
+  #intro .main-icon01 {
+    padding-top: 80px;
+    }
+  
+  #intro .frame-wrap p {
+    margin-top: 40px;
+    font-size: 3rem;
+    }
+  
+  #gnb .gnb-inner{
+    padding: 0 70px;
+    }
+  
+  #gnb .menu-left li a {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    }
+  
+  #gnb .menu-left li .gnb-img-box {
+    width: 30px;
+    height: 26px;
+    }
+  
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px){
+  #main .inner{
+    padding: 0 50px;
+    height: 100vh;
+  }
+    
+  #main .intro-wrap {
+    height: 100%;
+  }
+
+  /*gnb css 시작*/
+  #gnb .gnb-inner{
+    padding: 0 50px;
+  }
+  
+
+  #gnb .menu-left li:first-child{
+    margin-right: 60px;
+  }
+
+  #gnb .menu-left li:first-child a img{
+    width: 45px; 
+    height: auto;
+  }
+
+  #gnb .menu-left li a{
+    font-size: 1.8rem;
+  }
+
+  #gnb .menu-left li a img{
+    width: 35px; 
+    height: auto;
+  }
+
+  #gnb .menu-left li a span{
+    display: inline-block;
+  }
+
+  #gnb .menu-left li .gnb-img-box{
+    position: relative;
+    width: 38px;
+    height: 26px;
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px){
+  .inner {
+    padding: 0 80px;
+  }
+    
+  #main{
+    width: 100%;
+    background-color: #6660E8;
+  }
+    
+  #main .inner {
+    padding: 0 50px;
+  }
+
+  /*gnb css 시작*/
+  #gnb{
+    height: 70px;
+  }
+
+  #gnb .gnb-inner{
+    padding: 0 40px;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+  }
+
+  #gnb .menu-left{
+    height: 70px;
+  }
+
+  #gnb .menu-left li{
+    padding-right: 20px;
+  }
+
+  #gnb .menu-left li a{
+    font-size: 1.8rem;
+  }
+
+  #gnb .menu-left li:first-child{
+    padding-right: 0;
+  }
+
+  #gnb .menu-left li a img{
+    width: 100%;
+    height: auto;
+  }
+
+  #gnb .menu-left li:first-child a img{
+    width: 50px;
+    height: auto;
+  }
+
+  #gnb .menu-left li .gnb-img-box{
+    width: 32px;
+    height: 26px;
+    margin-bottom: 0;
+  }
+
+  #gnb .menu-right{
+    display: flex;
+    margin: auto 0;
+  }
+
+  #gnb .menu-right .menu-search-wrap .menu-search-box{
+    width: 200px;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    margin-right: 20px;
+  }
+
+  #gnb .menu-right .menu-search-wrap{
+    position: relative;
+  }
+  
+  #gnb .menu-right .menu-search-wrap img{
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 40px;
+    top: 8px;
+  }
+
+  #gnb .menu-right p{
+    font-size: 1.6rem;
+    color: #fff;
+  }
+
+  #gnb .menu-right span{
+    color: #fff;
+    font-size: 1.3rem;
+  }
+}
