@@ -1056,8 +1056,79 @@ about-wrap-left{
   right: 14%;
 }
 
+
+
+/*닫지마세요 frame*/
+#wrap{
+  overflow: hidden;
+}
+
+.frame-button img{
+  cursor: pointer;
+}
+
 .dont-close{
-  display: none;
+  width: 25%;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 5;
+}
+
+.dont-close .dc-frame{
+  background-color: #E1B4FF;
+  border: 3px solid #6660E8;
+}
+
+.dont-close .dc-frame .dc-bar{
+  height: 20px;
+  background-color: #6660E8;
+  position: relative;
+}
+
+.dont-close .dc-frame .dc-bar img{
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+}
+
+.dont-close .dc-frame .dc-txt-box{
+  margin: 10px;
+}
+
+.dont-close .dc-frame .dc-txt-box p{
+  color: #6660E8;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.dont-close .dc-frame .dc-txt-box .dc-button{
+  display: flex;
+  justify-content: center;
+}
+
+.dont-close .dc-frame .dc-txt-box .dc-button .dc-but-no{
+  margin-right: 15px;
+}
+
+.dont-close .dc-frame .dc-txt-box .dc-button > div{
+  width: 25%;
+  height: 25px;
+  border: 2px solid #6660E8;
+  color: #6660E8;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.dont-close .dc-frame .dc-txt-box .dc-button > div:hover{
+  background-color: #6660E8;
+  color: #E1B4FF;
+  border: 2px solid #6660E8;
 }
 
 
