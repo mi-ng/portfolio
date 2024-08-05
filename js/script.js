@@ -56,4 +56,13 @@ $(document).ready(function(){
     $('body').css({overflow:'visible'});
   });
 
+  $(".project-box").hide();
+  $(".logo").mouseenter(function(){
+    $(".project-box").show();
   });
+  $(".logo").mouseleave(function(){
+    $(".project-box").hide();
+  });
+
+
+});

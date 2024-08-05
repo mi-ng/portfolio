@@ -115,11 +115,17 @@ transform: translate(-50%, -50%);
 } */
 
   /*frame 공통부분*/
-.pf-frame-wrap{
-    width: 65%;
-    position: absolute;
-    top: 30px;
-    left: 30px;
+.pf-frame{
+  width: 65%;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.pf-frame-wrap .f2{
+  width: 50%;
+  top: 115px;
+  left: 170px;
 }
 
 .pf-frame{
@@ -140,7 +146,7 @@ transform: translate(-50%, -50%);
 }
   
 .pf-frame .bar .bar-tit{
-    margin: auto 20px;
+    margin: auto 10px;
     line-height: 35px;
     font-family: 'NeoDunggeunmoPro-Regular', sans-serif;
 }
@@ -169,14 +175,35 @@ transform: translate(-50%, -50%);
   
 .pf-frame p{
   font-family: "Noto Sans KR", sans-serif;
-  margin: 15px 0 0 25px;
+  margin: 15px 0 0 15px;
   font-size: 1.6rem;
 }
   
 .pf-frame p:last-child{
-  margin: 10px 0 15px 25px;
+  margin: 5px 0 15px 15px;
 }
 
+.pf-frame.f3{
+  width: 85%;
+  top: 63%;
+}
+
+.pf-frame.f3 p{
+  margin-right: 15px;
+}
+
+.project-box{
+  width: 176px;
+  height: 40px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.project-box.pb1{
+  background: url(../img/project_01.png) no-repeat top left / 176px auto;
+}
 
 /*gnb css 시작*/
 #gnb{
