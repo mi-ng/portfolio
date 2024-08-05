@@ -175,12 +175,12 @@ transform: translate(-50%, -50%);
   
 .pf-frame p{
   font-family: "Noto Sans KR", sans-serif;
-  margin: 15px 0 0 15px;
+  margin: 10px 0 0 15px;
   font-size: 1.6rem;
 }
   
 .pf-frame p:last-child{
-  margin: 5px 0 15px 15px;
+  margin: 5px 0 10px 15px;
 }
 
 .pf-frame.f3{

@@ -1068,9 +1068,9 @@ about-wrap-left{
 }
 
 .dont-close{
-  width: 25%;
+  width: 70%;
   position: fixed;
-  top: 40%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: 5;
@@ -1163,6 +1163,10 @@ about-wrap-left{
   #gnb .menu-left li .gnb-img-box {
     width: 30px;
     height: 26px;
+  }
+
+  .dont-close{
+    width: 50%;
   }
 
 }
@@ -1562,6 +1566,10 @@ about-wrap-left{
     padding-left: 60px;
   }
 
+  .dont-close{
+    width: 35%;
+  }
+
 }
 
 
@@ -1950,6 +1958,13 @@ about-wrap-left{
   #contact .how-cont li {
     padding-left: 10%;
   }
+
+  /*닫지마세요 frame*/
+.dont-close{
+  width: 25%;
+  top: 40%;
+  left: 50%;
+}
 
 
 }
