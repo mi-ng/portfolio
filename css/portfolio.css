@@ -4,25 +4,178 @@
   position: relative;
   padding: 0 20px;
 }
+
+  /*닫지마세요 frame*/
+  #wrap{
+    overflow: hidden;
+  }
+  
+  .frame-button img{
+    cursor: pointer;
+  }
+  
+  .dont-close{
+    width: 75%;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+  }
+  
+  .dont-close .dc-frame{
+    background-color: #E1B4FF;
+    border: 3px solid #6660E8;
+  }
+  
+  .dont-close .dc-frame .dc-bar{
+    height: 20px;
+    background-color: #6660E8;
+    position: relative;
+  }
+  
+  .dont-close .dc-frame .dc-bar img{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+  }
+  
+  .dont-close .dc-frame .dc-txt-box{
+    margin: 10px;
+  }
+  
+  .dont-close .dc-frame .dc-txt-box p{
+    color: #6660E8;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+  
+  .dont-close .dc-frame .dc-txt-box .dc-button{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dont-close .dc-frame .dc-txt-box .dc-button .dc-but-no{
+    margin-right: 15px;
+  }
+  
+  .dont-close .dc-frame .dc-txt-box .dc-button > div{
+    width: 25%;
+    height: 25px;
+    border: 2px solid #6660E8;
+    color: #6660E8;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 3px;
+    cursor: pointer;
+  }
+  
+  .dont-close .dc-frame .dc-txt-box .dc-button > div:hover{
+    background-color: #6660E8;
+    color: #E1B4FF;
+    border: 2px solid #6660E8;
+  }
+
   
 #main{
   width: 100%;
   /* height: 850px; */
   height: 100vh;
-  background: url(../img/pf-tn-main.png) no-repeat top left / cover;
+}
+
+#main.tn{
+  background: url(../img/pf-tn-main.png) no-repeat top center / cover;
 }
   
 #main .inner{
   height: 100%;
 }
+
+#main .tn-wrap .logo{
+    width: 250px;
+    height: 170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#main .tn-wrap .logo img{
+    width: 100%;
+}
   
 /* #intro .main-wrap{
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+width: 100%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 } */
+
+  /*frame 공통부분*/
+.pf-frame-wrap{
+    width: 65%;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.pf-frame{
+    border: 3px solid #6660E8;
+    background-color: #fff;
+}
+  
+.pf-frame .bar .bar-tit span{
+    color: #fff;
+    font-size: 1.6rem;
+    margin-left: 5px;
+}
+  
+.pf-frame .bar{
+    height: 35px;
+    position: relative;
+    background-color: #6660E8;
+}
+  
+.pf-frame .bar .bar-tit{
+    margin: auto 20px;
+    line-height: 35px;
+    font-family: 'NeoDunggeunmoPro-Regular', sans-serif;
+}
+  
+.pf-frame .bar .bar-tit img{
+    margin-top: 5px;
+    width: 25px;
+    height: auto;
+}
+  
+.pf-frame .bar .frame-button{
+  width: 22px;
+  height: 22px;
+  display: flex;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  justify-content: end;
+}
+  
+.pf-frame .bar .frame-button img{
+  width: 100%;
+  display: inline-block;
+  margin-left: 5px;
+}
+  
+.pf-frame p{
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 15px 0 0 25px;
+  font-size: 1.6rem;
+}
+  
+.pf-frame p:last-child{
+  margin: 10px 0 15px 25px;
+}
 
 
 /*gnb css 시작*/
@@ -108,7 +261,7 @@
 .menu-right{
   display: none;
 }
-  /*gnb css 끝*/
+/*gnb css 끝*/
 
 
 
@@ -118,7 +271,9 @@
 
 
 
-  /*중간 break*/
+
+
+/*중간 break*/
 @media screen and (min-width: 650px) {
 
   #intro .main-icon01 {
