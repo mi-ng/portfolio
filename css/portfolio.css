@@ -602,6 +602,15 @@ transform: translate(-50%, -50%);
 
   #tab{
     bottom: 100px;
+    height: 40px;
+  }
+  
+  #tab ul{
+    height: 40px;
+  }
+  
+  #tab ul li {
+    padding: 11px 20px;
   }
 
   
