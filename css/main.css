@@ -1960,11 +1960,11 @@ about-wrap-left{
   }
 
   /*닫지마세요 frame*/
-.dont-close{
-  width: 25%;
-  top: 40%;
-  left: 50%;
-}
+  .dont-close{
+    width: 25%;
+    top: 40%;
+    left: 50%;
+  }
 
 
 }

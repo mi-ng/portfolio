@@ -478,6 +478,11 @@ transform: translate(-50%, -50%);
     width: 50%;
     left: 45%;
   }
+
+  /*dont close*/
+  .dont-close{
+    width: 50%;
+  }
 }
 
 
@@ -558,6 +563,11 @@ transform: translate(-50%, -50%);
   #tab ul li{
     padding: 0 20px;
     font-size: 1.6rem;
+  }
+
+  /*dont close*/
+  .dont-close{
+    width: 35%;
   }
   
 }
@@ -701,6 +711,13 @@ transform: translate(-50%, -50%);
   #tab ul li{
     padding: 0 30px;
     font-size: 1.6rem;
+  }
+
+  /*닫지마세요 frame*/
+  .dont-close{
+    width: 25%;
+    top: 40%;
+    left: 50%;
   }
 }
 
