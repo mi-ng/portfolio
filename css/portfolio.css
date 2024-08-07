@@ -1,4 +1,8 @@
 @charset "utf-8";
+#wrap{
+  min-width: 320px;
+}
+
 .inner{
   margin: 0 auto;
   position: relative;
@@ -205,11 +209,65 @@ transform: translate(-50%, -50%);
   background: url(../img/project_01.png) no-repeat top left / 176px auto;
 }
 
+
+/*tab menu css*/
+#tab{
+  position: fixed;
+  left: 50%;
+  bottom: 80px;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 35px;
+  z-index: 9;
+}
+
+#tab ul{
+  position: relative;
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  background: rgba(102, 96, 232, 0.5);
+  box-shadow: 1px 1px 4px 2px rgba(60,55,190,0.4);
+  overflow: hidden;
+}
+
+#tab ul li{
+  display: grid;
+  place-items: center;
+  z-index: 10;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0 10px;
+}
+
+#tab ul li:last-child{
+  letter-spacing: -0.8px;
+}
+
+#tab ul li a{
+  display: block;
+  color: #fff;
+}
+
+#tab ul li:hover a{
+  color: #E1B4FF;
+}
+
+#tab ul li.active{
+  width: 35%;
+  height: 100%;
+  border-radius: 20px;
+  background: #6660E8;
+}
+
+
 /*gnb css 시작*/
 #gnb{
-  width:100%;
-  height:70px;
-  z-index:100;
+  width: 100%;
+  height: 65px;
+  z-index: 100;
   font-family: "Press Start 2P", 'NeoDunggeunmoPro-Regular', sans-serif;
   background-color: #6660E8;
   position: fixed;
@@ -225,7 +283,7 @@ transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 65px;
 }
   
 #gnb .menu-left li .gnb-img-box{
@@ -252,6 +310,7 @@ transform: translate(-50%, -50%);
   
 #gnb .menu-left li{
   padding-right: 5px;
+  letter-spacing: -0.8px;
 }
   
 #gnb .menu-left li a{
@@ -291,6 +350,73 @@ transform: translate(-50%, -50%);
 /*gnb css 끝*/
 
 
+/*branding*/
+#branding{
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+#branding h2{
+  font-size: 2rem;
+  color: #6660E8;
+  padding: 80px 0 50px;
+}
+
+#branding .tn-brand-logo{
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+#branding .tn-brand-iden{
+  width: 100%;
+  height: 100%;
+}
+
+#branding .tn-brand-iden p{
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+#branding .tn-brand-iden img{
+  width: 100%;
+}
+
+#branding .tn-brand-txt{
+  width: 90%;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+#branding .tn-brand-txt p{
+  padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 470px) {
+  #tab ul li{
+    padding: 0 20px;
+  }
+
+  #tab ul li.active{
+    width: 33%;
+  }
+
+  #gnb .menu-left li{
+    letter-spacing: 1px;
+  }
+}
+
 
 
 
@@ -325,8 +451,33 @@ transform: translate(-50%, -50%);
   #gnb .menu-left li .gnb-img-box {
     width: 30px;
     height: 26px;
-    }
-  
+  }
+
+  #tab ul li{
+    padding: 0 35px;
+    font-size: 1.4rem;
+  }
+
+  #tab ul li:last-child{
+    letter-spacing: -1px;
+  }
+
+  #tab ul li.active{
+    width: 35%;
+  }
+
+  .pf-frame {
+    width: 50%;
+  }
+
+  .pf-frame.f2 {
+    width: 45%;
+  }
+
+  .pf-frame.f3 {
+    width: 50%;
+    left: 45%;
+  }
 }
 
 
@@ -345,6 +496,22 @@ transform: translate(-50%, -50%);
     
   #main .intro-wrap {
     height: 100%;
+  }
+
+  .pf-frame{
+    width: 35%;
+    left: 70px;
+  }
+
+  .pf-frame.f2{
+    width: 30%;
+    left: 23%;
+  }
+
+  .pf-frame.f3{
+    width: 35%;
+    top: 60%;
+    left: 60%;
   }
 
   /*gnb css 시작*/
@@ -382,6 +549,17 @@ transform: translate(-50%, -50%);
     display: inline-block;
     margin: 0;
   }
+
+  /*tab menu*/
+  #tab{
+    width: 50%;
+  }
+
+  #tab ul li{
+    padding: 0 20px;
+    font-size: 1.6rem;
+  }
+  
 }
 
 
@@ -405,21 +583,43 @@ transform: translate(-50%, -50%);
   #main .inner {
     padding: 0 50px;
   }
+  
+  .pf-frame{
+    width: 20%;
+    left: 70px;
+  }
+
+  .pf-frame.f2{
+    width: 18%;
+    left: 17%;
+  }
+
+  .pf-frame.f3{
+    width: 25%;
+    top: 55%;
+    left: 70%;
+  }
+
+  #tab{
+    bottom: 100px;
+  }
+
+  
 
   /*gnb css 시작*/
   #gnb{
-    height: 70px;
+    height: 65px;
   }
 
   #gnb .gnb-inner{
     padding: 0 40px;
     display: flex;
-    height: 70px;
+    height: 65px;
     justify-content: space-between;
   }
 
   #gnb .menu-left{
-    height: 70px;
+    height: 65px;
   }
 
   #gnb .menu-left li{
@@ -483,5 +683,30 @@ transform: translate(-50%, -50%);
   #gnb .menu-right span{
     color: #fff;
     font-size: 1.3rem;
+  }
+
+  #tab{
+    width: 40%;
+  }
+
+  #tab ul li{
+    padding: 0 30px;
+    font-size: 1.6rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width : 1620px) {
+  #gnb .menu-left li .gnb-img-box{
+    width: 36px;
+    height: 26px;
+    margin-bottom: 0;
   }
 }
