@@ -99,7 +99,7 @@
 
 #main .tn-wrap .logo{
     width: 250px;
-    height: 170px;
+    height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -431,22 +431,22 @@ transform: translate(-50%, -50%);
 
   #intro .main-icon01 {
     padding-top: 80px;
-    }
+  }
   
   #intro .frame-wrap p {
     margin-top: 40px;
     font-size: 3rem;
-    }
+  }
   
   #gnb .gnb-inner{
     padding: 0 70px;
-    }
+  }
   
   #gnb .menu-left li a {
     display: block;
     color: #fff;
     font-size: 1.5rem;
-    }
+  }
   
   #gnb .menu-left li .gnb-img-box {
     width: 30px;
@@ -582,7 +582,7 @@ transform: translate(-50%, -50%);
 
 @media screen and (min-width: 1200px){
   .inner {
-    padding: 0 80px;
+    padding: 0 80px 65px;
   }
     
   #main{
@@ -591,7 +591,19 @@ transform: translate(-50%, -50%);
   }
     
   #main .inner {
-    padding: 0 50px;
+    padding: 0 50px 65px;
+  }
+
+  #main .tn-wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  #main .tn-wrap .logo{
+    width: 280px;
+    height: auto;
+    top: 55%;
   }
   
   .pf-frame{
@@ -609,6 +621,18 @@ transform: translate(-50%, -50%);
     top: 55%;
     left: 70%;
   }
+
+  .project-box{
+    width: 200px;
+    height: 50px;
+    top: 90%;
+  }
+  
+  .project-box.pb1{
+    background: url(../img/project_01.png) no-repeat top left / 200px auto;
+  }
+
+
 
   #tab{
     bottom: 100px;
