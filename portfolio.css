@@ -1,0 +1,896 @@
+@charset "utf-8";
+#wrap{
+  min-width: 320px;
+}
+
+.inner{
+  margin: 0 auto;
+  position: relative;
+  padding: 0 20px;
+}
+
+
+/*닫지마세요 frame*/
+#wrap{
+  overflow: hidden;
+}
+
+.frame-button img{
+  cursor: pointer;
+}
+
+.dont-close{
+  width: 75%;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 5;
+}
+
+.dont-close .dc-frame{
+  background-color: #E1B4FF;
+  border: 3px solid #6660E8;
+}
+
+.dont-close .dc-frame .dc-bar{
+  height: 20px;
+  background-color: #6660E8;
+  position: relative;
+}
+
+.dont-close .dc-frame .dc-bar img{
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+}
+
+.dont-close .dc-frame .dc-txt-box{
+  margin: 10px;
+}
+
+.dont-close .dc-frame .dc-txt-box p{
+  color: #6660E8;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.dont-close .dc-frame .dc-txt-box .dc-button{
+  display: flex;
+  justify-content: center;
+}
+
+.dont-close .dc-frame .dc-txt-box .dc-button .dc-but-no{
+  margin-right: 15px;
+}
+
+.dont-close .dc-frame .dc-txt-box .dc-button > div{
+  width: 25%;
+  height: 25px;
+  border: 2px solid #6660E8;
+  color: #6660E8;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.dont-close .dc-frame .dc-txt-box .dc-button > div:hover{
+  background-color: #6660E8;
+  color: #E1B4FF;
+  border: 2px solid #6660E8;
+}
+
+  
+#main{
+  width: 100%;
+  /* height: 850px; */
+  height: 100vh;
+}
+
+#main.tn{
+  background: url(../img/pf-tn-main.png) no-repeat top center / cover;
+}
+  
+#main .inner{
+  height: 100%;
+}
+
+#main .tn-wrap .logo{
+    width: 250px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#main .tn-wrap .logo img{
+    width: 100%;
+}
+  
+/* #intro .main-wrap{
+width: 100%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+} */
+
+  /*frame 공통부분*/
+.pf-frame{
+  width: 65%;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.pf-frame-wrap .f2{
+  width: 50%;
+  top: 115px;
+  left: 170px;
+}
+
+.pf-frame{
+    border: 3px solid #6660E8;
+    background-color: #fff;
+}
+  
+.pf-frame .bar .bar-tit span{
+    color: #fff;
+    font-size: 1.6rem;
+    margin-left: 5px;
+}
+  
+.pf-frame .bar{
+    height: 35px;
+    position: relative;
+    background-color: #6660E8;
+}
+  
+.pf-frame .bar .bar-tit{
+    margin: auto 10px;
+    line-height: 35px;
+    font-family: 'NeoDunggeunmoPro-Regular', sans-serif;
+}
+  
+.pf-frame .bar .bar-tit img{
+    margin-top: 5px;
+    width: 25px;
+    height: auto;
+}
+  
+.pf-frame .bar .frame-button{
+  width: 22px;
+  height: 22px;
+  display: flex;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  justify-content: end;
+}
+  
+.pf-frame .bar .frame-button img{
+  width: 100%;
+  display: inline-block;
+  margin-left: 5px;
+}
+  
+.pf-frame p{
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 7px 0 0 15px;
+  font-size: 1.4rem;
+}
+  
+.pf-frame p:last-child{
+  margin: 5px 0 7px 15px;
+}
+
+.pf-frame.f3{
+  width: 85%;
+  top: 66%;
+}
+
+.pf-frame.f3 p{
+  margin-right: 15px;
+}
+
+.project-box{
+  width: 176px;
+  height: 40px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../img/project.png) no-repeat top left / 100% auto;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #fff;
+  padding-top: 18px;
+}
+
+
+/*tab menu css*/
+#tab{
+  position: fixed;
+  left: 50%;
+  bottom: 80px;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 35px;
+  z-index: 9;
+}
+
+#tab ul{
+  position: relative;
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  background: rgba(102, 96, 232, 0.5);
+  box-shadow: 1px 1px 4px 2px rgba(60,55,190,0.4);
+  overflow: hidden;
+}
+
+#tab ul li{
+  display: grid;
+  place-items: center;
+  z-index: 10;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0 10px;
+}
+
+#tab ul li:last-child{
+  letter-spacing: -0.8px;
+}
+
+#tab ul li a{
+  display: block;
+  color: #fff;
+}
+
+#tab ul li:hover a{
+  color: #E1B4FF;
+}
+
+#tab ul li.active{
+  width: 35%;
+  height: 100%;
+  border-radius: 20px;
+  background: #6660E8;
+}
+
+
+/*gnb css 시작*/
+#gnb{
+  width: 100%;
+  height: 65px;
+  z-index: 100;
+  font-family: "Press Start 2P", 'NeoDunggeunmoPro-Regular', sans-serif;
+  background-color: #6660E8;
+  position: fixed;
+  bottom: 0;
+}
+  
+#gnb .gnb-inner{
+  position: relative;
+  padding: 0 20px;
+}
+  
+#gnb .menu-left{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+}
+  
+#gnb .menu-left li .gnb-img-box{
+  position: relative;
+  width: 25px;
+  height: 20px;
+  margin: 0 auto 5px;
+}
+  
+#gnb .menu-left li .gnb-img-box img{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#gnb .menu-left li .gnb-img-box img.img-hover{
+  display: none;
+}
+  
+#gnb .menu-left li:first-child a img{
+  width: 30px; 
+  height: auto;
+}
+  
+#gnb .menu-left li{
+  padding-right: 5px;
+  letter-spacing: -0.8px;
+}
+  
+#gnb .menu-left li a{
+  display:block; 
+  color:#fff; 
+  font-size: 1.2rem;
+}
+  
+#gnb .menu-left li:first-child a{
+  margin-right: 0;
+}
+  
+#gnb .menu-left li a span{
+  text-align: center;
+  display: block;
+}
+  
+#gnb .menu-left li a:hover{
+  color:#FBFF4E;
+}
+  
+#gnb .menu-left li a:hover .img{
+  display: none;
+}
+  
+#gnb .menu-left li a:hover .img-hover{
+  display: block;
+}
+  
+#gnb .menu-left li a img{
+  width: 100%; 
+}
+  
+.menu-right{
+  display: none;
+}
+/*gnb css 끝*/
+
+
+/*공통부분*/
+h2{
+  font-size: 2rem;
+  color: #6660E8;
+  padding: 80px 0 50px;
+}
+
+h4{
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-style: italic;
+  color: #60574E;
+}
+
+#print p{
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+#branding .tn-brand-logo,
+#print .manual-ex,
+.news-txt,
+h4{
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+
+/*항목 선택 탭 css*/
+.folder-select-tab{
+  position: absolute;
+  top: 78px;
+  left: 32%;
+}
+
+.folder-select-tab ul{
+  display: flex;
+}
+
+.folder-select-tab ul li{
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #E1B4FF;
+  border: 2px solid #E1B4FF;
+  padding: 5px 12px 3px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.folder-select-tab ul li:hover{
+  background-color: #E1B4FF;
+  color: #fff;
+}
+
+.folder-select-tab ul li.active{
+  background-color: #E1B4FF;
+  color: #fff;
+}
+
+
+
+/*테넌바움 페이지 css 시작*/
+/*branding*/
+#branding{
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+#branding .tn-brand-iden{
+  width: 100%;
+  height: 100%;
+}
+
+#branding .tn-brand-iden p{
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+#branding .tn-brand-iden img{
+  width: 100%;
+}
+
+#branding .tn-brand-txt{
+  width: 90%;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+#branding .tn-brand-txt p{
+  padding-bottom: 10px;
+}
+
+#branding .branding-img{
+  width: 100%;
+  height: auto;
+}
+
+#branding .branding-img img{
+  width: 100%;
+}
+
+
+/*테넌바움 print css*/
+.manual-img-box{
+  width: 100%;
+  height: auto;
+  margin: 30px 0;
+}
+.manual-img-box img{
+  width: 100%;
+}
+
+.manual-sam div{
+  margin-bottom: 120px;
+}
+
+
+/*news ad css*/
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 40%;
+  height: auto;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.tn-print-news{
+  margin-bottom: 150px;
+}
+
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal{
+  --swiper-theme-color: #6660E8;
+}
+
+
+
+
+
+
+@media screen and (min-width: 470px) {
+  #tab ul li{
+    padding: 0 20px;
+  }
+
+  #tab ul li.active{
+    width: 33%;
+  }
+
+  #gnb .menu-left li{
+    letter-spacing: 1px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*중간 break*/
+@media screen and (min-width: 650px) {
+
+  #intro .main-icon01 {
+    padding-top: 80px;
+  }
+  
+  #intro .frame-wrap p {
+    margin-top: 40px;
+    font-size: 3rem;
+  }
+  
+  #gnb .gnb-inner{
+    padding: 0 70px;
+  }
+  
+  #gnb .menu-left li a {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  #gnb .menu-left li .gnb-img-box {
+    width: 30px;
+    height: 26px;
+  }
+
+  #tab ul li{
+    padding: 0 35px;
+    font-size: 1.4rem;
+  }
+
+  #tab ul li:last-child{
+    letter-spacing: -1px;
+  }
+
+  #tab ul li.active{
+    width: 35%;
+  }
+
+  .pf-frame {
+    width: 50%;
+  }
+
+  .pf-frame.f2 {
+    width: 45%;
+  }
+
+  .pf-frame.f3 {
+    width: 50%;
+    left: 45%;
+  }
+
+  /*dont close*/
+  .dont-close{
+    width: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px){
+  #main .inner{
+    padding: 0 50px;
+    height: 100vh;
+  }
+    
+  #main .intro-wrap {
+    height: 100%;
+  }
+
+  .pf-frame{
+    width: 35%;
+    left: 70px;
+  }
+
+  .pf-frame.f2{
+    width: 30%;
+    left: 23%;
+  }
+
+  .pf-frame.f3{
+    width: 35%;
+    top: 60%;
+    left: 62%;
+  }
+
+  .pf-frame p{
+    font-size: 1.6rem;
+  }
+
+  /*gnb css 시작*/
+  #gnb .gnb-inner{
+    padding: 0 50px;
+  }
+  
+
+  #gnb .menu-left li:first-child{
+    margin-right: 60px;
+  }
+
+  #gnb .menu-left li:first-child a img{
+    width: 45px; 
+    height: auto;
+  }
+
+  #gnb .menu-left li a{
+    font-size: 1.8rem;
+  }
+
+  #gnb .menu-left li a img{
+    width: 35px; 
+    height: auto;
+  }
+
+  #gnb .menu-left li a span{
+    display: inline-block;
+  }
+
+  #gnb .menu-left li .gnb-img-box{
+    position: relative;
+    width: 38px;
+    height: 26px;
+    display: inline-block;
+    margin: 0;
+  }
+
+  /*tab menu*/
+  #tab{
+    width: 50%;
+  }
+
+  #tab ul li{
+    padding: 0 20px;
+    font-size: 1.6rem;
+  }
+
+  /*dont close*/
+  .dont-close{
+    width: 35%;
+  }
+
+  /*서브페이지 공통사항*/
+  #print p{
+    margin-bottom: 3px;
+    font-size: 1.4rem;
+  }
+
+  /*항목 선택 탭 css*/
+  .folder-select-tab{
+    position: absolute;
+    top: 78px;
+    left: 13%;
+  }
+
+  .folder-select-tab ul li{
+    margin-right: 20px;
+    font-size: 1.5rem;
+    padding: 7px 20px 5px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px){
+  .inner {
+    padding: 0 80px 65px;
+  }
+    
+  #main{
+    width: 100%;
+    background-color: #6660E8;
+  }
+    
+  #main .inner {
+    padding: 0 50px 65px;
+  }
+
+  #main .tn-wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  #main .tn-wrap .logo{
+    width: 280px;
+    height: auto;
+    top: 55%;
+  }
+  
+  .pf-frame{
+    width: 20%;
+    left: 70px;
+  }
+
+  .pf-frame.f2{
+    width: 18%;
+    left: 17%;
+  }
+
+  .pf-frame.f3{
+    width: 25%;
+    top: 65%;
+    left: 70%;
+  }
+
+  .project-box{
+    width: 200px;
+    height: 50px;
+    top: 90%;
+    font-size: 1.6rem;
+    padding-top: 21px;
+  }
+
+
+  #tab{
+    bottom: 100px;
+    height: 40px;
+  }
+  
+  #tab ul{
+    height: 40px;
+  }
+  
+  #tab ul li {
+    padding: 11px 20px;
+    font-size: 1.6rem;
+  }
+
+  
+
+  /*gnb css 시작*/
+  #gnb{
+    height: 65px;
+  }
+
+  #gnb .gnb-inner{
+    padding: 0 40px;
+    display: flex;
+    height: 65px;
+    justify-content: space-between;
+  }
+
+  #gnb .menu-left{
+    height: 65px;
+  }
+
+  #gnb .menu-left li{
+    padding-right: 20px;
+  }
+
+  #gnb .menu-left li a{
+    font-size: 1.8rem;
+  }
+
+  #gnb .menu-left li:first-child{
+    padding-right: 0;
+  }
+
+  #gnb .menu-left li a img{
+    width: 100%;
+    height: auto;
+  }
+
+  #gnb .menu-left li:first-child a img{
+    width: 50px;
+    height: auto;
+  }
+
+  #gnb .menu-left li .gnb-img-box{
+    width: 32px;
+    height: 26px;
+    margin-bottom: 0;
+  }
+
+  #gnb .menu-right{
+    display: flex;
+    margin: auto 0;
+  }
+
+  #gnb .menu-right .menu-search-wrap .menu-search-box{
+    width: 200px;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    margin-right: 20px;
+  }
+
+  #gnb .menu-right .menu-search-wrap{
+    position: relative;
+  }
+  
+  #gnb .menu-right .menu-search-wrap img{
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 40px;
+    top: 8px;
+  }
+
+  #gnb .menu-right p{
+    font-size: 1.6rem;
+    color: #fff;
+  }
+
+  #gnb .menu-right span{
+    color: #fff;
+    font-size: 1.3rem;
+  }
+
+  #tab{
+    width: 40%;
+  }
+
+
+  /*닫지마세요 frame*/
+  .dont-close{
+    width: 25%;
+    top: 40%;
+    left: 50%;
+  }
+
+
+  /*서브페이지 공통사항*/
+  /*항목 선택 탭 css*/
+  .folder-select-tab{
+    top: 76px;
+    left: 15%;
+  }
+
+
+  /*테넌바움 print*/
+  .manual-sam div{
+    margin-bottom: 20px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width : 1620px) {
+  #gnb .menu-left li .gnb-img-box{
+    width: 36px;
+    height: 26px;
+    margin-bottom: 0;
+  }
+}
