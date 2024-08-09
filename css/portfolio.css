@@ -9,78 +9,79 @@
   padding: 0 20px;
 }
 
-  /*닫지마세요 frame*/
-  #wrap{
-    overflow: hidden;
-  }
-  
-  .frame-button img{
-    cursor: pointer;
-  }
-  
-  .dont-close{
-    width: 75%;
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 5;
-  }
-  
-  .dont-close .dc-frame{
-    background-color: #E1B4FF;
-    border: 3px solid #6660E8;
-  }
-  
-  .dont-close .dc-frame .dc-bar{
-    height: 20px;
-    background-color: #6660E8;
-    position: relative;
-  }
-  
-  .dont-close .dc-frame .dc-bar img{
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    right: 5px;
-    cursor: pointer;
-  }
-  
-  .dont-close .dc-frame .dc-txt-box{
-    margin: 10px;
-  }
-  
-  .dont-close .dc-frame .dc-txt-box p{
-    color: #6660E8;
-    text-align: center;
-    margin-bottom: 6px;
-  }
-  
-  .dont-close .dc-frame .dc-txt-box .dc-button{
-    display: flex;
-    justify-content: center;
-  }
-  
-  .dont-close .dc-frame .dc-txt-box .dc-button .dc-but-no{
-    margin-right: 15px;
-  }
-  
-  .dont-close .dc-frame .dc-txt-box .dc-button > div{
-    width: 25%;
-    height: 25px;
-    border: 2px solid #6660E8;
-    color: #6660E8;
-    font-size: 1.3rem;
-    text-align: center;
-    padding: 3px;
-    cursor: pointer;
-  }
-  
-  .dont-close .dc-frame .dc-txt-box .dc-button > div:hover{
-    background-color: #6660E8;
-    color: #E1B4FF;
-    border: 2px solid #6660E8;
-  }
+
+/*닫지마세요 frame*/
+#wrap{
+  overflow: hidden;
+}
+
+.frame-button img{
+  cursor: pointer;
+}
+
+.dont-close{
+  width: 75%;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 5;
+}
+
+.dont-close .dc-frame{
+  background-color: #E1B4FF;
+  border: 3px solid #6660E8;
+}
+
+.dont-close .dc-frame .dc-bar{
+  height: 20px;
+  background-color: #6660E8;
+  position: relative;
+}
+
+.dont-close .dc-frame .dc-bar img{
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+}
+
+.dont-close .dc-frame .dc-txt-box{
+  margin: 10px;
+}
+
+.dont-close .dc-frame .dc-txt-box p{
+  color: #6660E8;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.dont-close .dc-frame .dc-txt-box .dc-button{
+  display: flex;
+  justify-content: center;
+}
+
+.dont-close .dc-frame .dc-txt-box .dc-button .dc-but-no{
+  margin-right: 15px;
+}
+
+.dont-close .dc-frame .dc-txt-box .dc-button > div{
+  width: 25%;
+  height: 25px;
+  border: 2px solid #6660E8;
+  color: #6660E8;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.dont-close .dc-frame .dc-txt-box .dc-button > div:hover{
+  background-color: #6660E8;
+  color: #E1B4FF;
+  border: 2px solid #6660E8;
+}
 
   
 #main{
@@ -179,17 +180,17 @@ transform: translate(-50%, -50%);
   
 .pf-frame p{
   font-family: "Noto Sans KR", sans-serif;
-  margin: 10px 0 0 15px;
-  font-size: 1.6rem;
+  margin: 7px 0 0 15px;
+  font-size: 1.4rem;
 }
   
 .pf-frame p:last-child{
-  margin: 5px 0 10px 15px;
+  margin: 5px 0 7px 15px;
 }
 
 .pf-frame.f3{
   width: 85%;
-  top: 63%;
+  top: 66%;
 }
 
 .pf-frame.f3 p{
@@ -200,13 +201,14 @@ transform: translate(-50%, -50%);
   width: 176px;
   height: 40px;
   position: absolute;
-  top: 75%;
+  top: 90%;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.project-box.pb1{
-  background: url(../img/project_01.png) no-repeat top left / 176px auto;
+  background: url(../img/project.png) no-repeat top left / 100% auto;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #fff;
+  padding-top: 18px;
 }
 
 
@@ -350,20 +352,72 @@ transform: translate(-50%, -50%);
 /*gnb css 끝*/
 
 
-/*branding*/
-#branding{
-  width: 100%;
-  padding-bottom: 70px;
-}
-
-#branding h2{
+/*공통부분*/
+h2{
   font-size: 2rem;
   color: #6660E8;
   padding: 80px 0 50px;
 }
 
-#branding .tn-brand-logo{
+h4{
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-style: italic;
+  color: #60574E;
+}
+
+#print p{
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+#branding .tn-brand-logo,
+#print .manual-ex,
+.news-txt,
+h4{
   font-family: "Noto Sans KR", sans-serif;
+}
+
+
+/*항목 선택 탭 css*/
+.folder-select-tab{
+  position: absolute;
+  top: 78px;
+  left: 32%;
+}
+
+.folder-select-tab ul{
+  display: flex;
+}
+
+.folder-select-tab ul li{
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #E1B4FF;
+  border: 2px solid #E1B4FF;
+  padding: 5px 12px 3px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.folder-select-tab ul li:hover{
+  background-color: #E1B4FF;
+  color: #fff;
+}
+
+.folder-select-tab ul li.active{
+  background-color: #E1B4FF;
+  color: #fff;
+}
+
+
+
+/*테넌바움 페이지 css 시작*/
+/*branding*/
+#branding{
+  width: 100%;
+  padding-bottom: 70px;
 }
 
 #branding .tn-brand-iden{
@@ -394,9 +448,57 @@ transform: translate(-50%, -50%);
   padding-bottom: 10px;
 }
 
+#branding .branding-img{
+  width: 100%;
+  height: auto;
+}
+
+#branding .branding-img img{
+  width: 100%;
+}
 
 
+/*테넌바움 print css*/
+.manual-img-box{
+  width: 100%;
+  height: auto;
+  margin: 30px 0;
+}
+.manual-img-box img{
+  width: 100%;
+}
 
+.manual-sam div{
+  margin-bottom: 120px;
+}
+
+
+/*news ad css*/
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 40%;
+  height: auto;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.tn-print-news{
+  margin-bottom: 150px;
+}
+
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal{
+  --swiper-theme-color: #6660E8;
+}
 
 
 
@@ -516,7 +618,11 @@ transform: translate(-50%, -50%);
   .pf-frame.f3{
     width: 35%;
     top: 60%;
-    left: 60%;
+    left: 62%;
+  }
+
+  .pf-frame p{
+    font-size: 1.6rem;
   }
 
   /*gnb css 시작*/
@@ -569,6 +675,25 @@ transform: translate(-50%, -50%);
   .dont-close{
     width: 35%;
   }
+
+  /*서브페이지 공통사항*/
+  #print p{
+    margin-bottom: 3px;
+    font-size: 1.4rem;
+  }
+
+  /*항목 선택 탭 css*/
+  .folder-select-tab{
+    position: absolute;
+    top: 78px;
+    left: 13%;
+  }
+
+  .folder-select-tab ul li{
+    margin-right: 20px;
+    font-size: 1.5rem;
+    padding: 7px 20px 5px;
+  }
   
 }
 
@@ -618,7 +743,7 @@ transform: translate(-50%, -50%);
 
   .pf-frame.f3{
     width: 25%;
-    top: 55%;
+    top: 65%;
     left: 70%;
   }
 
@@ -626,12 +751,9 @@ transform: translate(-50%, -50%);
     width: 200px;
     height: 50px;
     top: 90%;
+    font-size: 1.6rem;
+    padding-top: 21px;
   }
-  
-  .project-box.pb1{
-    background: url(../img/project_01.png) no-repeat top left / 200px auto;
-  }
-
 
 
   #tab{
@@ -645,6 +767,7 @@ transform: translate(-50%, -50%);
   
   #tab ul li {
     padding: 11px 20px;
+    font-size: 1.6rem;
   }
 
   
@@ -732,10 +855,6 @@ transform: translate(-50%, -50%);
     width: 40%;
   }
 
-  #tab ul li{
-    padding: 0 30px;
-    font-size: 1.6rem;
-  }
 
   /*닫지마세요 frame*/
   .dont-close{
@@ -743,6 +862,21 @@ transform: translate(-50%, -50%);
     top: 40%;
     left: 50%;
   }
+
+
+  /*서브페이지 공통사항*/
+  /*항목 선택 탭 css*/
+  .folder-select-tab{
+    top: 76px;
+    left: 15%;
+  }
+
+
+  /*테넌바움 print*/
+  .manual-sam div{
+    margin-bottom: 20px;
+  }
+  
 }
 
 

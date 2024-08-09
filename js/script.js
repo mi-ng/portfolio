@@ -64,6 +64,43 @@ $(document).ready(function(){
     $(".project-box").hide();
   });
 
+  //folder-select-tab
+  $(".folder-select li").eq(1).hide();
+  $(".folder-select-tab li").click(function(){
+    $(this).addClass("active").siblings().removeClass("active");
+
+    var indexNum = $(this).index();
+    $(".folder-select li").eq(indexNum).show().siblings().hide();
+  });
 
 
+  //news ad swiper
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "1",
+    loop:true,
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    breakpoints: {
+      650: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
+  });
 });
