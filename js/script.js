@@ -64,6 +64,7 @@ $(document).ready(function(){
     $(".project-box").hide();
   });
 
+  
   //folder-select-tab
   $(".folder-select li").eq(1).hide();
   $(".folder-select-tab li").click(function(){
