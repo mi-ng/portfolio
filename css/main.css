@@ -94,7 +94,7 @@
 
 #intro .main-icon01 li{
   width: 100px;
-  margin: 0 10px 30px 10px;
+  margin: 0 6px 30px 0px;
 }
 
 
@@ -103,9 +103,10 @@
 }
 
 #intro .main-icon01 li p, #intro .main-icon02 li p{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: center;
   color: #fff;
+  letter-spacing: -0.8px;
 }
 
 #intro .main-icon01 .icon-pb{
@@ -321,7 +322,7 @@
 
 #about .about-tit-wrap .about-tit .about-tit-txt span{
   font-family: 'NeoDunggeunmoPro-Regular', sans-serif;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   color: #6660E8;
   white-space: nowrap;
   animation: move-left 10s linear infinite;
@@ -414,7 +415,7 @@ about-wrap-left{
   background-color: #6660E8;
   border: 3px solid #fff;
   position: absolute;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 #about .about-tmi01 .tmi01 .txt-box{
@@ -469,6 +470,7 @@ about-wrap-left{
 /*about-profile css*/
 #about .profile-wrap{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   padding-top: 100px;
   font-family: "Noto Sans KR", sans-serif;
@@ -491,7 +493,7 @@ about-wrap-left{
   background-color: #000;
   color: #fff;
   margin-right: 10px;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .others{
@@ -504,7 +506,7 @@ about-wrap-left{
 .name, .birth, .phone, .mail{
   background-color: #fff;
   border: 2px solid #6660E8;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #6660E8;
 }
 
@@ -618,7 +620,7 @@ about-wrap-left{
 .about-frame p{
   font-family: "Noto Sans KR", sans-serif;
   margin: 35px 0 0 30px;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .about-frame p:last-child{
@@ -706,8 +708,8 @@ about-wrap-left{
 }
 
 .sk-f-wrap .sk-img-box{
-  width: 40px;
-  height: 40px;
+  width: 12%;
+  height: 12%;
   border-radius: 5px;
   background-color: #fff;
 }
@@ -722,7 +724,7 @@ about-wrap-left{
 }
 
 .skill-wrap p{
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: #6660E8;
   margin: 0 0 5px 0;
 }
@@ -837,7 +839,7 @@ about-wrap-left{
   height: 18px;
   position: absolute;
   right: 5px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 #portfolio .popup-frame .txt-box{
@@ -847,6 +849,7 @@ about-wrap-left{
 #portfolio .popup-frame .txt-box p{
   color: #6660E8;
   margin-bottom: 6px;
+  letter-spacing: -0.8px;
 }
 
 #portfolio .popup-frame .txt-box .pop-button{
@@ -858,7 +861,7 @@ about-wrap-left{
   text-align: center;
   padding: 3px;
   margin: 0 auto;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 #portfolio .popup-frame .txt-box .pop-button:hover{
@@ -1063,9 +1066,9 @@ about-wrap-left{
   overflow: hidden;
 }
 
-.frame-button img{
+/* .frame-button img{
   cursor: pointer;
-}
+} */
 
 .dont-close{
   width: 70%;
@@ -1092,7 +1095,7 @@ about-wrap-left{
   height: 18px;
   position: absolute;
   right: 5px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .dont-close .dc-frame .dc-txt-box{
@@ -1122,7 +1125,7 @@ about-wrap-left{
   font-size: 1.3rem;
   text-align: center;
   padding: 3px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .dont-close .dc-frame .dc-txt-box .dc-button > div:hover{
@@ -1169,6 +1172,10 @@ about-wrap-left{
     width: 50%;
   }
 
+  .sk-f-wrap .sk-img-box {
+    width: 6%;
+    height: auto;
+  }
 }
 
 
@@ -1392,7 +1399,7 @@ about-wrap-left{
     background-color: #fff;
     border: 2px solid #000;
     position: absolute;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
   
   #about .about-tmi02 .tmi02 .txt-box{
@@ -1556,6 +1563,10 @@ about-wrap-left{
     width: 70%;
   }
 
+  .sk-f-wrap .sk-img-box {
+    width: 10%;
+    height: 10%;
+  }
 
   #contact .cont-wrap {
     width: 45%;
@@ -1950,6 +1961,11 @@ about-wrap-left{
 
   #portfolio .tab .tab-con .right-box {
     width: 70%;
+  }
+
+  .sk-f-wrap .sk-img-box {
+    width: 8%;
+    height: auto;
   }
   
 

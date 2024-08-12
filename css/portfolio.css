@@ -15,9 +15,9 @@
   overflow: hidden;
 }
 
-.frame-button img{
+/* .frame-button img{
   cursor: pointer;
-}
+} */
 
 .dont-close{
   width: 75%;
@@ -44,7 +44,7 @@
   height: 18px;
   position: absolute;
   right: 5px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .dont-close .dc-frame .dc-txt-box{
@@ -74,7 +74,7 @@
   font-size: 1.3rem;
   text-align: center;
   padding: 3px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .dont-close .dc-frame .dc-txt-box .dc-button > div:hover{
@@ -239,7 +239,7 @@ transform: translate(-50%, -50%);
   display: grid;
   place-items: center;
   z-index: 10;
-  cursor: pointer;
+  /* cursor: pointer; */
   font-size: 1.2rem;
   padding: 0 10px;
 }
@@ -354,7 +354,7 @@ transform: translate(-50%, -50%);
 
 /*공통부분*/
 h2{
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #6660E8;
   padding: 80px 0 50px;
 }
@@ -398,7 +398,7 @@ h4{
   border: 2px solid #E1B4FF;
   padding: 5px 12px 3px;
   border-radius: 20px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .folder-select-tab ul li:hover{
@@ -450,12 +450,13 @@ h4{
 
 #branding .branding-img{
   width: 100%;
-  height: auto;
+  height: 1525px;
+  background: url(../img/pf_tn_branding_m.png) no-repeat top center / contain;
 }
 
-#branding .branding-img img{
+/* #branding .branding-img img{
   width: 100%;
-}
+} */
 
 
 /*테넌바움 print css*/
@@ -585,6 +586,18 @@ h4{
   .dont-close{
     width: 50%;
   }
+
+
+  /*branding css*/
+  #branding .branding-img{
+    width: 100%;
+    height: 1000px;
+    background: url(../img/pf_tn_branding.png) no-repeat top center / contain;
+  }
+
+  .folder-select-tab {
+    left: 17%;
+}
 }
 
 
@@ -604,6 +617,7 @@ h4{
   #main .intro-wrap {
     height: 100%;
   }
+  
 
   .pf-frame{
     width: 35%;
@@ -677,6 +691,10 @@ h4{
   }
 
   /*서브페이지 공통사항*/
+  h2{
+    font-size: 2rem;
+  }
+
   #print p{
     margin-bottom: 3px;
     font-size: 1.4rem;
@@ -693,6 +711,12 @@ h4{
     margin-right: 20px;
     font-size: 1.5rem;
     padding: 7px 20px 5px;
+  }
+  
+
+  /*branding css*/
+  #branding .branding-img{
+    height: 1450px;
   }
   
 }
@@ -872,10 +896,17 @@ h4{
   }
 
 
+  /*branding*/
+  #branding .branding-img{
+    height: 1400px;
+  }
+
+
   /*테넌바움 print*/
   .manual-sam div{
     margin-bottom: 20px;
   }
+  
   
 }
 

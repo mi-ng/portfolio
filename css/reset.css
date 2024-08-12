@@ -15,7 +15,7 @@ ul, ol{
 a{
   text-decoration: none;
   color: #333;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 img{
@@ -41,3 +41,10 @@ body{
   font-weight: normal;
   font-style: normal;
 }
+
+a:hover,
+li:hover p,
+li:hover img,
+.pointer,
+.frame-button > img,
+#gnb span, #gnb img{cursor : url(../img/mouse_cursor_hover.png) 2 2, auto;}
