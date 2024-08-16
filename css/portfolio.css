@@ -6,7 +6,7 @@
 .inner{
   margin: 0 auto;
   position: relative;
-  padding: 0 20px;
+  padding: 0 20px 65px;
 }
 
 
@@ -244,8 +244,13 @@ transform: translate(-50%, -50%);
   padding: 0 10px;
 }
 
+#tab ul li:first-child{
+  padding: 0 10px 0 25px;
+}
+
 #tab ul li:last-child{
   letter-spacing: -0.8px;
+  padding: 0 15px 0 10px;
 }
 
 #tab ul li a{
@@ -262,6 +267,7 @@ transform: translate(-50%, -50%);
   height: 100%;
   border-radius: 20px;
   background: #6660E8;
+  padding-left: 10px;
 }
 
 
@@ -365,6 +371,12 @@ h4{
   font-weight: normal;
   font-style: italic;
   color: #60574E;
+}
+
+h3{
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 #print p{
@@ -501,6 +513,63 @@ h4{
   --swiper-theme-color: #6660E8;
 }
 
+
+/*web css*/
+#web{
+  width: 100%;
+  height: 100vh;
+}
+
+.left-img{
+  width: 330px;
+  height: 260px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.left-img img{
+  width: 100%;
+}
+
+#web p{
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+#web p strong{
+  color: #6660E8;
+}
+
+#web .web-fwrap{
+  text-align: center;
+}
+
+.right ul{
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.4rem;
+  margin: 50px 0 20px;
+}
+
+.right ul li a{
+  border: 1px solid #6660E8;
+  padding: 5px 20px;
+  color: #6660E8;
+  border-radius: 20px;
+}
+
+.right ul li a:hover{
+  background-color: #6660E8;
+  color: #fff;
+}
+
+.gray{
+  color: #555;
+}
+
+.pj-ex{
+  padding: 0 10px;
+}
 
 
 
@@ -906,6 +975,21 @@ h4{
   .manual-sam div{
     margin-bottom: 20px;
   }
+
+  /*web css*/
+.web-fwrap{
+  display: flex;
+  justify-content: center;
+}
+
+.left-img{
+  width: 630px;
+  height: 500px;
+}
+
+.left-img img{
+  width: 100%;
+}
   
   
 }

@@ -47,4 +47,5 @@ li:hover p,
 li:hover img,
 .pointer,
 .frame-button > img,
-#gnb span, #gnb img{cursor : url(../img/mouse_cursor_hover.png) 2 2, auto;}
+#gnb span, #gnb img,
+.left-img a img{cursor : url(../img/mouse_cursor_hover.png) 2 2, auto;}
