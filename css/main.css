@@ -329,6 +329,16 @@
   display: inline-block;
 }
 
+/*move-left 애니메이션*/
+@keyframes move-left {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+
 #about .about-tit-wrap .about-tit .about-tit-img{
   width: 30px;
   height: 26px;
