@@ -639,12 +639,12 @@ about-wrap-left{
 
 
 /*about-fram f1*/
-.about-frame.f1{
+.about-frame.f1, .about-frame.f3{
   border: 3px solid #E1B4FF;
   margin-top: 60px;
 }
 
-.about-frame.f1 .bar{
+.about-frame.f1 .bar, .about-frame.f3 .bar{
   background-color: #E1B4FF;
 }
 
@@ -655,11 +655,11 @@ about-wrap-left{
 
 
 /*about-fram f2*/
-.about-frame.f2, .about-frame.f3{
+.about-frame.f2{
   border: 3px solid #6660E8;
 }
 
-.about-frame.f2 .bar, .about-frame.f3 .bar{
+.about-frame.f2 .bar{
   background-color: #6660E8;
 }
 
@@ -686,7 +686,7 @@ about-wrap-left{
 
 .about-side-bar{
   position: absolute;
-  right: 0;
+  right: -2px;
   height: 95%;
 }
 
