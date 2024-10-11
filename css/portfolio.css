@@ -252,7 +252,7 @@ transform: translate(-50%, -50%);
 
 #tab ul li:last-child{
   letter-spacing: -0.8px;
-  padding: 0 15px 0 10px;
+  padding: 0 25px 0 10px;
 }
 
 #tab ul li a{
@@ -377,8 +377,8 @@ h4{
 
 h3{
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 2.4rem;
+  margin: 20px 0;
 }
 
 #print p{
@@ -519,7 +519,7 @@ h4{
 /*web css*/
 #web{
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .left{
@@ -527,9 +527,38 @@ h4{
   margin: 30px auto 0;
 }
 
+.left-img{
+  position: relative;
+}
+
 .left-img img{
   width: 100%;
 }
+
+.mask{
+  width: 318px;
+  height: 179px;
+  overflow: hidden;
+  position: absolute;
+  top: 17px;
+  left: 16px;
+  z-index: -1;
+}
+
+.web-scroll{
+  animation: move-top 12s infinite;
+}
+
+/*move-top 애니메이션*/
+@keyframes move-top {
+0%{
+  transform: translateY(0);
+}
+100%{
+  transform: translateY(-80%);
+}
+}
+
 
 #web p{
   font-family: "Noto Sans KR", sans-serif;
@@ -548,7 +577,7 @@ h4{
 .right ul{
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1.4rem;
-  margin: 30px 0 30px;
+  margin: 30px 0 20px;
 }
 
 .right ul li a{
@@ -568,7 +597,7 @@ h4{
 }
 
 .pj-ex{
-  padding: 0 10px;
+  padding: 0 10px 50px;
 }
 
 
@@ -791,6 +820,10 @@ h4{
 
 
   /*web css*/
+  #web{
+    height: 100vh;
+  }
+
   #web .inner{
     padding: 0 40px 65px;
   }
@@ -1018,6 +1051,11 @@ h4{
   .left{
     width: 450px;
     margin: 0 60px;
+  }
+
+  .mask{
+    width: 413px;
+    height: 240px;
   }
   
   
