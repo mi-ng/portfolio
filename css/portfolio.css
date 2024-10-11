@@ -90,25 +90,25 @@
   height: 100vh;
 }
 
-#main.tn{
-  background: url(../img/pf-tn-main.png) no-repeat top center / cover;
-}
-  
 #main .inner{
   height: 100%;
 }
 
-#main .tn-wrap .logo{
-    width: 250px;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#main .logo{
+  width: 250px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+
+
+
+
 #main .tn-wrap .logo img{
-    width: 100%;
+  width: 100%;
 }
   
 /* #intro .main-wrap{
@@ -119,7 +119,7 @@ left: 50%;
 transform: translate(-50%, -50%);
 } */
 
-  /*frame 공통부분*/
+/*frame 공통부분*/
 .pf-frame{
   width: 65%;
   position: absolute;
@@ -244,15 +244,11 @@ transform: translate(-50%, -50%);
   /* cursor: pointer; */
   font-size: 1.2rem;
   padding: 0 10px;
-}
-
-#tab ul li:first-child{
-  padding: 0 10px 0 25px;
+  margin: 0 auto;
 }
 
 #tab ul li:last-child{
   letter-spacing: -0.8px;
-  padding: 0 25px 0 10px;
 }
 
 #tab ul li a{
@@ -270,6 +266,7 @@ transform: translate(-50%, -50%);
   border-radius: 20px;
   background: #6660E8;
   padding: 0 10px;
+  margin: auto 0;
 }
 
 
@@ -427,7 +424,11 @@ h4{
 
 
 
-/*테넌바움 페이지 css 시작*/
+/*tannenbaum setting*/
+#main.tn{
+  background: url(../img/pf-tn-main.png) no-repeat top center / cover;
+}
+
 /*branding*/
 #branding{
   width: 100%;
@@ -513,6 +514,18 @@ h4{
 
 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal{
   --swiper-theme-color: #6660E8;
+}
+
+
+/*chcm setting*/
+#main.cc{
+  background: url(../img/pf_cc_main.png) no-repeat top center / cover;
+}
+
+#ci .ci-img{
+  width: 100%;
+  height: 1020px;
+  background: url(../img/pf_cc_ci_m.png) no-repeat top center / contain;
 }
 
 
@@ -685,14 +698,6 @@ h4{
     width: 50%;
   }
 
-
-  /*branding css*/
-  #branding .branding-img{
-    width: 100%;
-    height: 1000px;
-    background: url(../img/pf_tn_branding.png) no-repeat top center / contain;
-  }
-
   .folder-select-tab {
     left: 17%;
 }
@@ -811,11 +816,18 @@ h4{
     padding: 7px 20px 5px;
   }
   
-
-  /*branding css*/
-  #branding .branding-img{
-    height: 1450px;
-  }
+    /*branding css*/
+    #branding .branding-img{
+      width: 100%;
+      height: 1450px;
+      background: url(../img/pf_tn_branding.png) no-repeat top center / contain;
+    }
+  
+    #ci .ci-img{
+      width: 100%;
+      height: 1000px;
+      background: url(../img/pf_cc_ci.png) no-repeat top center / contain;
+    }
 
 
 
@@ -1074,5 +1086,9 @@ h4{
     width: 36px;
     height: 26px;
     margin-bottom: 0;
+  }
+
+  #ci .ci-img{
+    height: 1200px;
   }
 }
