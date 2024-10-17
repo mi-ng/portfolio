@@ -107,7 +107,7 @@
 
 
 
-#main .tn-wrap .logo img{
+#main .logo img{
   width: 100%;
 }
   
@@ -384,7 +384,7 @@ h3{
 }
 
 #branding .tn-brand-logo,
-#print .manual-ex,
+.manual-ex, .comp-intro-ex,
 .news-txt,
 h4{
   font-family: "Noto Sans KR", sans-serif;
@@ -392,6 +392,10 @@ h4{
 
 
 /*항목 선택 탭 css*/
+#print.chcm .folder-select-tab{
+  display: none;
+}
+
 .folder-select-tab{
   position: absolute;
   top: 78px;
@@ -425,7 +429,7 @@ h4{
 
 
 /*tannenbaum setting*/
-#main.tn{
+#main.tb{
   background: url(../img/pf-tn-main.png) no-repeat top center / cover;
 }
 
@@ -474,13 +478,13 @@ h4{
 } */
 
 
-/*테넌바움 print css*/
-.manual-img-box{
+/*print css*/
+.manual-img-box, .comp-img-box{
   width: 100%;
   height: auto;
   margin: 30px 0;
 }
-.manual-img-box img{
+.manual-img-box img, .comp-img-box img{
   width: 100%;
 }
 
@@ -528,6 +532,40 @@ h4{
   background: url(../img/pf_cc_ci_m.png) no-repeat top center / contain;
 }
 
+/*기술보증기금 setting*/
+#main.kb{
+  background: url(../img/pf_kb_main.png) no-repeat top center / cover;
+}
+
+.outdoor-box{
+  width: 100%;
+  margin: 10px 0 30px;
+}
+
+.outdoor-box img{
+  width: 100%;
+}
+
+.kb-print-main .manual-img-box{
+  width: 100%;
+  height: auto;
+  margin: 30px 0;
+}
+
+/*부산it교육센터/아카데미 setting*/
+#main.bt{
+  background: url(../img/pf_bt_main.png) no-repeat top center / cover;
+}
+
+#main.bt .logo{
+  width: 450px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 /*web css*/
 #web{
@@ -553,16 +591,24 @@ h4{
   height: 179px;
   overflow: hidden;
   position: absolute;
-  top: 17px;
+  top: 19px;
   left: 16px;
   z-index: -1;
 }
 
-.web-scroll{
-  animation: move-top 12s infinite;
+.web-scroll.tb{
+  animation: move-top 13s infinite;
 }
 
-/*move-top 애니메이션*/
+#web.chcm .web-scroll{
+  animation: move-top-100 13s steps(7) infinite;
+}
+
+#web.bt .web-scroll{
+  animation: move-top-90 13s infinite;
+}
+
+/*move-top 애니메이션 80%*/
 @keyframes move-top {
 0%{
   transform: translateY(0);
@@ -571,6 +617,26 @@ h4{
   transform: translateY(-80%);
 }
 }
+
+/*move-top 애니메이션 90%*/
+@keyframes move-top-90 {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-90%);
+  }
+  }
+
+/*move-top 애니메이션 100%*/
+@keyframes move-top-100 {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-100%);
+  }
+  }
 
 
 #web p{
@@ -623,7 +689,7 @@ h4{
   }
 
   #tab ul li.active{
-    width: 33%;
+    width: 50%;
   }
 
   #gnb .menu-left li{
@@ -680,6 +746,10 @@ h4{
     width: 35%;
   }
 
+  #main.kb #tab ul li.active {
+    width: 50%;
+  }
+
   .pf-frame {
     width: 50%;
   }
@@ -701,6 +771,16 @@ h4{
   .folder-select-tab {
     left: 17%;
 }
+
+/*기술보증기금*/
+.kb-print-sub .manual-img-box{
+  display: flex;
+  justify-content: space-between;
+  width: 370px;
+  height: auto;
+  margin: 30px 20px;
+}
+
 }
 
 
@@ -816,18 +896,25 @@ h4{
     padding: 7px 20px 5px;
   }
   
-    /*branding css*/
-    #branding .branding-img{
-      width: 100%;
-      height: 1450px;
-      background: url(../img/pf_tn_branding.png) no-repeat top center / contain;
-    }
+  /*branding css*/
+  #branding .branding-img{
+     width: 100%;
+     height: 1450px;
+     background: url(../img/pf_tn_branding.png) no-repeat top center / contain;
+  }
+
+  /*기술보증기금*/
+  .kb-print-sub .manual-img-box{
+    width: 550px;
+  }
   
-    #ci .ci-img{
-      width: 100%;
-      height: 1000px;
-      background: url(../img/pf_cc_ci.png) no-repeat top center / contain;
-    }
+  #ci .ci-img{
+    width: 100%;
+    height: 1000px;
+    background: url(../img/pf_cc_ci.png) no-repeat top center / contain;
+  }
+
+    
 
 
 
@@ -1054,6 +1141,10 @@ h4{
     margin-bottom: 20px;
   }
 
+  /*기술보증기금*/
+  .kb-print-sub .manual-img-box{
+    width: 600px;
+  }
 
   /*web css*/
   .web-fwrap{
