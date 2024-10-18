@@ -92,6 +92,12 @@ $(document).ready(function(){
     pagination: {
       el: ".swiper-pagination",
     },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    mousewheel: true,
+    keyboard: true,
     breakpoints: {
       650: {
         slidesPerView: 2,

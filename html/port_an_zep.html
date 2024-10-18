@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TANNENBAUM</title>
+    <title>안데르센 동화전시회</title>
 
     <link rel="icon" href="../img/favi.png">
 
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/portfolio.css">
     <link rel="stylesheet" href="../css/ani.css">
   
     <script src="../js/jquery-3.7.1.min.js"></script>
     <script src="../js/jquery-1.12.3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="../js/script.js"></script>
 
@@ -38,13 +39,13 @@
         </div>
     </div><!--dont-close-->
 
-    <div id="main" class="tb">
+    <div id="main" class="an">
         <div class="inner">
-            <div class="tn-wrap">
+            <div class="an-wrap">
                 <div class="logo">
-                    <img src="../img/pf-tn-logo.png" alt="TANNENBAUM">
+                    <img src="../img/pf_an_logo.png" alt="andersen">
                     <div class="project-box">
-                      Project 02
+                      Project 05
                     </div>
                 </div>
 
@@ -61,10 +62,16 @@
                         </div>
                       </div><!--bar-->
                       <p>
-                        Illustrator : 60%
+                        ZEP : 50%
                       </p>
                       <p>
-                        Photoshop : 40%
+                        Figma : 20%
+                      </p>
+                      <p>
+                        Illustrator : 20%
+                      </p>
+                      <p>
+                        After Effect : 10%
                       </p>
                     </div><!--frame f1-->
                   </div><!--frame-wrap-->
@@ -82,10 +89,10 @@
                         </div>
                       </div><!--bar-->
                       <p>
-                        기획 : 70%
+                        기획 : 30%
                       </p>
                       <p>
-                        디자인 : 100%
+                        디자인 : 60%
                       </p>
                     </div><!--frame f2-->
                   </div><!--frame-wrap-->
@@ -103,29 +110,26 @@
                         </div>
                       </div><!--bar-->
                       <p>
-                        클라이언트 : (주)협성
+                        팀프로젝트 01
                       </p>
                       <p>
-                        네이밍부터 B.I., 인쇄물, 웹 페이지까지<br>
-                        제작한 하이엔드 브랜딩 프로젝트입니다.
+                        부산IT교육센터에서 수업을 들으며 진행했던<br>
+                        첫번째 팀 프로젝트 입니다.
                       </p>
                     </div><!--frame f3-->
                   </div><!--frame-wrap-->
 
                   <div id="tab">
                     <ul>
-                      <li>
-                        <a href="port_tb_brand.html#branding">BRANDING</a>
-                      </li>
-                      <li>
-                        <a href="port_tb_print.html#print">PRINT</a>
-                      </li>
                       <li class="active">
-                        <a href="port_tb_web.html#web">WEB PAGE</a>
+                        <a href="port_an_zep.html#zep">ZEP/DESIGN</a>
+                      </li>
+                      <li>
+                        <a href="port_an_web.html#web">WEB PAGE</a>
                       </li>
                     </ul>
                   </div>
-            </div><!--tn-wrap-->
+            </div><!--an-wrap-->
         </div><!--inner-->
     </div>
   
@@ -180,41 +184,73 @@
         </div><!--inner-->
     </div><!--#gnb-->
 
-    <div id="web" class="tb">
+    <div id="zep" class="an">
       <div class="inner">
-        <div class="web-wrap">
-          <h2>WEB PAGE</h2>
-          <div class="web-fwrap">
-            <div class="left">
-              <div class="left-img">
-                <a href="https://www.tannenbaum.co.kr/" target="_blank">
-                  <img src="../img/web_base.png" alt="web base">
-                  <div class="mask">
-                    <img src="../img/pf_tn_web_2.png" alt="tannenbaum web page scroll" class="web-scroll">
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="right">
-              <ul>
-                <li>
-                  <a href="https://www.tannenbaum.co.kr/" target="_blank">Go to PAGE</a>
-                </li>
-              </ul>
-              <h3>테넌바움 반응형 홈페이지</h3>
-              <p class="gray">2023. 11. 실무 프로젝트</p>
-              <p><strong>기여도 :</strong> 디자인 100%, 기획 60%</p>
-              <p><strong>작업 프로그램 :</strong> Illustrator, Photoshop</p>
-              <p class="pj-ex">
-                퍼블리싱 과정을 배우기 전이라 디자인 작업만 담당하였습니다.<br>
-                반응형 홈페이지로 작업하여 어떤 기기에서도 자연스러운 전환이 가능하며,<br> 
-                메인페이지를 작업한 후 상세페이지를 일괄 작업하였습니다.
-              </p>
-            </div>
+        <div class="zep-wrap">
+          <h2>ZEP</h2>
+          <div class="folder-select-tab">
+            <ul>
+              <li class="active">MAIN</li>
+              <li>SUB</li>
+            </ul>
           </div>
-        </div><!--web-wrap-->
+          
+          <div class="folder-select">
+            <ul>
+              <li class="kb-print-main active">
+                <div class="manual-ex">
+                  <h4>KIBO MAIN DESIGN</h4>
+                  <p>기술을 보유한 기업을 지원해주는 업체라는 점을 전달하기 위해 담당 AE와 수차례 회의하며 프로젝트를 진행하였습니다.
+                  </p>
+                  <p>
+                    그런 과정과 AE와 디자이너, 광고주의 원활한 소통을 통해 만족스러운 작업물이 완성되었습니다.
+                  </p>
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="../img/pf_kb_print.png" alt="기술보증기금01">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../img/pf_kb_print_02.png" alt="기술보증기금02">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../img/pf_kb_print_03.png" alt="기술보증기금03">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../img/pf_kb_print.png" alt="기술보증기금01">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../img/pf_kb_print_02.png" alt="기술보증기금02">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../img/pf_kb_print_03.png" alt="기술보증기금03">
+                      </div>
+                    </div>
+                    <div class="swiper-button-next pointer"></div>
+                    <div class="swiper-button-prev pointer"></div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="kb-print-sub">
+                <div class="manual-ex">
+                  <h4>KIBO SUB DESIGN</h4>
+                  <p>기술을 보유한 기업을 지원해주는 업체라는 점을 전달하기 위해 담당 AE와 수차례 회의하며 프로젝트를 진행하였습니다.
+                  </p>
+                  <p>
+                    1차로 들어갔던 시안이며, 내부에서는 만족스러운 시안이었으나  클라이언트 입장에서는 조금 더 미래적인 느낌을 원하여 아쉽게 서브로 들어간 시안입니다.
+                  </p>
+                  <div class="manual-img-box">
+                    <img src="../img/pf_kb_print_04.png" alt="기술보증기금 메인 시안">
+                    <img src="../img/pf_kb_print_05.png" alt="기술보증기금 메인 2">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div><!--print-wrap-->
       </div><!--inner-->
-    </div><!--#web-->
+    </div><!--#print-->
     </div><!--#wrap-->
 </body>
 </html>

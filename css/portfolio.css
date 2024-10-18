@@ -261,7 +261,7 @@ transform: translate(-50%, -50%);
 }
 
 #tab ul li.active{
-  width: 35%;
+  width: 50%;
   height: 100%;
   border-radius: 20px;
   background: #6660E8;
@@ -493,7 +493,7 @@ h4{
 }
 
 
-/*news ad css*/
+/*swiper css*/
 .swiper {
   width: 100%;
   padding-top: 50px;
@@ -518,6 +518,10 @@ h4{
 
 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal{
   --swiper-theme-color: #6660E8;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+  color: #E1B4FF;
 }
 
 
@@ -567,6 +571,11 @@ h4{
 }
 
 
+/*안데르센 동화전시회 setting*/
+#main.an{
+  background: url(../img/pf_an_main.png) no-repeat top center / cover;
+}
+
 /*web css*/
 #web{
   width: 100%;
@@ -591,13 +600,13 @@ h4{
   height: 179px;
   overflow: hidden;
   position: absolute;
-  top: 19px;
+  top: 16px;
   left: 16px;
   z-index: -1;
 }
 
-.web-scroll.tb{
-  animation: move-top 13s infinite;
+#web.tb .web-scroll{
+  animation: move-top 13s linear infinite;
 }
 
 #web.chcm .web-scroll{
@@ -605,7 +614,7 @@ h4{
 }
 
 #web.bt .web-scroll{
-  animation: move-top-90 13s infinite;
+  animation: move-top-90 20s linear infinite;
 }
 
 /*move-top 애니메이션 80%*/
