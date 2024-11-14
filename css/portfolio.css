@@ -94,8 +94,9 @@
   height: 100%;
 }
 
+/*각 페이지 로고 사이즈 조정*/
 #main .logo{
-  width: 250px;
+  width: 70%;
   height: auto;
   position: absolute;
   top: 50%;
@@ -103,13 +104,15 @@
   transform: translate(-50%, -50%);
 }
 
-
-
+#main.tb .logo, #main.cc .logo, #main.kb .logo{
+  width: 50%;
+}
 
 
 #main .logo img{
   width: 100%;
 }
+
   
 /* #intro .main-wrap{
 width: 100%;
@@ -361,7 +364,7 @@ transform: translate(-50%, -50%);
 h2{
   font-size: 1.8rem;
   color: #6660E8;
-  padding: 80px 0 50px;
+  padding: 80px 25px 50px 0;
 }
 
 h4{
@@ -396,10 +399,12 @@ h4{
   display: none;
 }
 
-.folder-select-tab{
-  position: absolute;
-  top: 78px;
-  left: 32%;
+.folder-wrap{
+  display: flex;
+}
+
+.folder-wrap .folder-select-tab{
+  padding: 80px 0 50px;
 }
 
 .folder-select-tab ul{
@@ -426,12 +431,38 @@ h4{
   color: #fff;
 }
 
+/*안데르센 폴더선택 디자인 변경*/
+#zep .folder-select-tab{
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+#zep .folder-select-tab ul{
+  justify-content: center;
+}
+
+#zep .folder-select-tab ul li{
+  color: #6660E8;
+  border: 2px solid #6660E8;
+}
+
+#zep .folder-select-tab ul li:hover{
+  background-color: #6660E8;
+  color: #fff;
+}
+
+#zep .folder-select-tab ul li.active{
+  background-color: #6660E8;
+  color: #fff;
+}
+
 
 
 /*tannenbaum setting*/
 #main.tb{
   background: url(../img/pf-tn-main.png) no-repeat top center / cover;
 }
+
 
 /*branding*/
 #branding{
@@ -561,19 +592,65 @@ h4{
   background: url(../img/pf_bt_main.png) no-repeat top center / cover;
 }
 
-#main.bt .logo{
-  width: 450px;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
 /*안데르센 동화전시회 setting*/
 #main.an{
   background: url(../img/pf_an_main.png) no-repeat top center / cover;
+}
+
+.an-zep .manual-ex p{
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.an-zep .manual-ex span, .an-zep .manual-ex strong{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.an-zep .manual-ex strong{
+  font-size: 1.6rem;
+}
+
+.an-start{
+  width: 35%;
+  height: auto;
+  margin: 20px auto;
+  animation: move-up-down 1.5s linear infinite;
+}
+
+.an-start img{
+  width: 100%;
+}
+
+.an-map{
+  width: 100%;
+  height: auto;
+  margin: 30px auto;
+}
+
+.an-map img{
+  width: 100%;
+}
+
+.an-falersen{
+  width: 100%;
+  height: auto;
+  margin: 50px auto;
+}
+
+.an-falersen img{
+  width: 100%;
+}
+
+#web.an .right ul{
+  display: flex;
+  justify-content: center;
+}
+
+#web.an .right ul li:first-child{
+  margin-right: 15px;
 }
 
 /*web css*/
@@ -617,6 +694,12 @@ h4{
   animation: move-top-90 20s linear infinite;
 }
 
+#web.an .web-scroll{
+  animation: move-top-90 15s linear infinite;
+}
+
+/*----------------------애니메이션----------------------*/
+
 /*move-top 애니메이션 80%*/
 @keyframes move-top {
 0%{
@@ -645,7 +728,20 @@ h4{
   100%{
     transform: translateY(-100%);
   }
+}
+
+/*상하 움직임 애니메이션*/
+@keyframes move-up-down {
+  0%{
+    transform: translateY(0);
   }
+  50%{
+    transform: translateY(5%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
 
 
 #web p{
@@ -662,23 +758,57 @@ h4{
   text-align: center;
 }
 
+
+/*링크 연결 선택 버튼*/
 .right ul{
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1.4rem;
   margin: 30px 0 20px;
 }
 
-.right ul li a{
+.right ul li a, .zep-link a{
   border: 1px solid #6660E8;
   padding: 5px 20px;
   color: #6660E8;
   border-radius: 20px;
 }
 
-.right ul li a:hover{
+.right ul li a:hover, .zep-link a:hover{
   background-color: #6660E8;
   color: #fff;
 }
+
+/*안데르센 변경*/
+.right.an{
+  margin-bottom: 30px;
+}
+
+.right.an ul{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.right.an ul li{
+  margin-right: 10px;
+}
+
+.link-ex{
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.2rem;
+  color: #6660E8;
+  text-align: center;
+}
+
+.zep-link{
+  margin: 40px auto 70px;
+  text-align: center;
+}
+
+.zep-link a{
+  padding: 5px 35px;
+}
+
 
 .gray{
   color: #555;
@@ -777,18 +907,31 @@ h4{
     width: 50%;
   }
 
-  .folder-select-tab {
-    left: 17%;
-}
+  /*각 페이지 로고 사이즈 조정*/
+  #main .logo{
+    width: 55%;
+  }
 
-/*기술보증기금*/
-.kb-print-sub .manual-img-box{
-  display: flex;
-  justify-content: space-between;
-  width: 370px;
-  height: auto;
-  margin: 30px 20px;
-}
+  #main.tb .logo, #main.cc .logo, #main.kb .logo{
+    width: 30%;
+  }
+
+  /*기술보증기금*/
+  .kb-print-sub .manual-img-box{
+    display: flex;
+    justify-content: space-between;
+    width: 370px;
+    height: auto;
+    margin: 30px 20px;
+  }
+
+  /*안데르센 동화전시회 setting*/
+  .an-start{
+    width: 25%;
+    height: auto;
+    margin: 20px auto;
+  }
+
 
 }
 
@@ -828,7 +971,7 @@ h4{
   }
 
   .pf-frame p{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   /*gnb css 시작*/
@@ -877,6 +1020,11 @@ h4{
     font-size: 1.6rem;
   }
 
+  #tab ul li.active {
+    width: 45%;
+    padding: 5px 10px 0;
+  }
+
   /*dont close*/
   .dont-close{
     width: 35%;
@@ -890,13 +1038,6 @@ h4{
   #print p{
     margin-bottom: 3px;
     font-size: 1.4rem;
-  }
-
-  /*항목 선택 탭 css*/
-  .folder-select-tab{
-    position: absolute;
-    top: 78px;
-    left: 13%;
   }
 
   .folder-select-tab ul li{
@@ -923,9 +1064,34 @@ h4{
     background: url(../img/pf_cc_ci.png) no-repeat top center / contain;
   }
 
-    
+  /*안데르센*/
+  .an-zep .manual-ex strong{
+    font-size: 2.4rem;
+  }
+
+  .link-ex{
+    font-size: 1.4rem;
+  }
+
+  #web.an .right ul{
+    display: flex;
+    justify-content: start;
+  }
 
 
+  /*각 페이지 로고 사이즈 조정*/
+  #main .logo{
+    width: 40%;
+  }
+
+  #main.tb .logo, #main.cc .logo, #main.kb .logo{
+    width: 20%;
+  }
+
+  #main.an .logo{
+    width: 30%;
+  }
+   
 
   /*web css*/
   #web{
@@ -952,6 +1118,25 @@ h4{
     padding: 0;
   }
   
+  /*안데르센 동화전시회 setting*/
+.an-start{
+  width: 15%;
+  height: auto;
+  margin: 20px auto;
+}
+
+.an-map{
+  width: 60%;
+  height: auto;
+  margin: 30px auto;
+}
+
+.an-falersen{
+  width: 60%;
+  height: auto;
+  margin: 50px auto;
+}
+
 }
 
 
@@ -980,12 +1165,6 @@ h4{
     width: 100%;
     height: 100%;
     position: relative;
-  }
-
-  #main .tn-wrap .logo{
-    width: 280px;
-    height: auto;
-    top: 55%;
   }
   
   .pf-frame{
@@ -1033,10 +1212,6 @@ h4{
 
   #tab ul li:last-child {
     padding: 5px 25px 0 10px;
-  }
-
-  #tab ul li.active {
-    padding: 5px 10px 0;
   }
 
   /*gnb css 시작*/
@@ -1133,10 +1308,6 @@ h4{
 
   /*서브페이지 공통사항*/
   /*항목 선택 탭 css*/
-  .folder-select-tab{
-    top: 76px;
-    left: 15%;
-  }
 
 
   /*branding*/
@@ -1153,6 +1324,12 @@ h4{
   /*기술보증기금*/
   .kb-print-sub .manual-img-box{
     width: 600px;
+  }
+
+  /*안데르센*/
+  .zep-link{
+    margin: 40px auto 100px;
+    text-align: center;
   }
 
   /*web css*/
