@@ -814,7 +814,7 @@ about-wrap-left{
 }
 
 .tab-btn ul li{
-  width:23%;
+  width: 23%;
   flex-shrink: 0;
   text-align: center;
 }
@@ -822,7 +822,7 @@ about-wrap-left{
 .tab-btn ul li a{
   display: block;
   color: #6660E8;
-  padding-top: 60%;
+  padding-top: 55%;
   background: url(../img/folder-close.png) no-repeat center top / 60% auto;
 }
 
@@ -831,7 +831,95 @@ about-wrap-left{
   background-image: url(../img/folder-open.png);
 }
 
+#portfolio .frame{
+  font-family: 'NeoDunggeunmoPro-Regular', sans-serif;
+  width: 100%;
+  /* height: 420px; */
+  border: 3px solid #6660E8;
+  /* margin: 0 auto; */
+  overflow: hidden;
+}
+
+#portfolio .frame.tb, #portfolio .frame.cc, #portfolio .frame.kn{
+  font-family: "Press Start 2P", 'NeoDunggeunmoPro-Regular', sans-serif;
+}
+
+
+#portfolio .frame .frame-img{
+  width: 100%;
+  height: 420px;
+  font-size: 0;
+  color: transparent;
+}
+
+
+/*----------------portfolio preview-----------------*/
+#portfolio .frame.bt .frame-img{
+  background: url(../img/pf_busanit_m.png) no-repeat center / cover;
+}
+
+#portfolio .frame.tb .frame-img{
+  background: url(../img/pf_tannenbaum_m.png) no-repeat center / cover;
+}
+
+#portfolio .frame.cc .frame-img{
+  background: url(../img/pf_chcm_m.png) no-repeat center / cover;
+}
+
+#portfolio .frame.kb .frame-img{
+  background: url(../img/pf_kibo_m.png) no-repeat center top / cover;
+}
+
+#portfolio .frame.an .frame-img{
+  background: url(../img/pf_andersen_m.png) no-repeat center top / cover;
+}
+
+#portfolio .frame.kn .frame-img{
+  background: url(../img/pf_konec_m.png) no-repeat center center / cover;
+}
+
+
+#portfolio .frame .bar{
+  height: 35px;
+  background-color: #6660E8;
+  position: relative;
+}
+
+#portfolio .frame .bar .bar-tit{
+  padding-left: 20px;
+  line-height: 35px;
+  text-align: left;
+}
+
+#portfolio .frame .bar .bar-tit img{
+  width: 22px;
+  height: 22px;
+  margin: 5px 5px 0 0;
+}
+
+#portfolio .frame .bar .bar-tit span{
+  color: #fff;
+}
+
+#portfolio .frame .bar .frame-button{
+  width: 22px;
+  height: 22px;
+  display: flex;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  justify-content: end;
+}
+
+#portfolio .frame .bar .frame-button img{
+  width: 100%;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/*----------------안내팝업--------------------*/
 #portfolio .popup-frame{
+  display: none;
   width: 80%;
   background-color: #E1B4FF;
   border: 3px solid #6660E8;
@@ -881,11 +969,7 @@ about-wrap-left{
 }
 
 #portfolio .tab .tab-con{
-  padding: 30px 30px 100px;
-}
-
-#portfolio .tab .tab-con .left-box{
-  display: none;
+  padding: 20px 20px 20px;
 }
 
 #portfolio .tab .tab-con .right-box{
@@ -905,9 +989,10 @@ about-wrap-left{
   display: block;
   background-color: #FFADE8;
   border: 2px solid #6660E8;
-  padding: 8px 15px 4px;
+  padding: 10px 20px 8px;
   margin: 10px 10px 0 0;
   color: #6660E8;
+  font-size: 1.4rem;
 }
 
 #portfolio .tab .tab-con .tab-con-b-wrap .tab-con-button:hover{
@@ -1511,7 +1596,9 @@ about-wrap-left{
     justify-content: space-between;
   }
 
+  /*-------------------버튼 안내창 css 가리기-------------------*/
   #portfolio .tab-popup{
+    display: none;
     width: 30%;
     position: absolute;
     top: 50%; left: 50%;
@@ -1522,13 +1609,12 @@ about-wrap-left{
   #portfolio .popup-frame{
     width: 100%;
   }
-
+  
   #portfolio .tab .tab-btn {
     width: 32%;
     padding: 0;
     margin: auto 0;
   }
-  
   
   #portfolio .tab-btn ul{
     flex-wrap: wrap;
@@ -1537,12 +1623,14 @@ about-wrap-left{
   #portfolio .tab .tab-btn ul li {
     text-align: center;
     width: calc(100% / 2);
-    padding: 0 0 25px;
+    padding: 0 0 10px;
   }
 
   #portfolio .tab .tab-con{
     width: 65%;
     position: relative;
+    padding: 0;
+    margin: auto 0;
   }
 
   #portfolio .tab .tab-con li .left-box{
@@ -1560,17 +1648,48 @@ about-wrap-left{
     transform: translateY(-50%);
   }
 
-  #portfolio .tab .tab-con .left-box{
-    display: block;
-    width: 30%;
-  }
-
-  #portfolio .tab .tab-con .left-box img{
-    width: 100%;
-  }
-
   #portfolio .tab .tab-con .right-box {
     width: 70%;
+  }
+
+  #portfolio .tab .tab-con .tab-con-b-wrap .tab-con-button{
+    padding: 13px 25px 10px;
+    font-size: 1.6rem;
+  }
+
+  #portfolio .frame{
+    height: 460px;
+  }
+
+  #portfolio .frame .frame-img{
+    width: 100%;
+    height: 420px;
+
+  }
+
+  /*----------------portfolio preview-----------------*/
+  #portfolio .frame.bt .frame-img{
+    background: url(../img/pf_busanit.png) no-repeat center left / cover;
+  }
+
+  #portfolio .frame.tb .frame-img{
+    background: url(../img/pf_tannenbaum.png) no-repeat center left / cover;
+  }
+
+  #portfolio .frame.cc .frame-img{
+    background: url(../img/pf_chcm.png) no-repeat center left / cover;
+  }
+
+  #portfolio .frame.kb .frame-img{
+    background: url(../img/pf_kibo.png) no-repeat center left / cover;
+  }
+
+  #portfolio .frame.an .frame-img{
+    background: url(../img/pf_andersen.png) no-repeat center left / cover;
+  }
+
+  #portfolio .frame.kn .frame-img{
+    background: url(../img/pf_konec.png) no-repeat center left / cover;
   }
 
   .sk-f-wrap .sk-img-box {
@@ -1942,7 +2061,7 @@ about-wrap-left{
 
 
   #portfolio .tab .tab-con{
-    width: 55%;
+    width: 65%;
     position: relative;
   }
 
@@ -1971,6 +2090,14 @@ about-wrap-left{
 
   #portfolio .tab .tab-con .right-box {
     width: 70%;
+  }
+
+  .tab-btn ul li a{
+    padding-top: 60%;
+  }
+  
+  #portfolio .tab .tab-btn ul li {
+    padding: 0 0 25px;
   }
 
   .sk-f-wrap .sk-img-box {
