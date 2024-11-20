@@ -1,4 +1,8 @@
 @charset "utf-8";
+#wrap{
+  min-width: 320px;
+}
+
 .inner{
   margin: 0 auto;
   position: relative;
