@@ -690,8 +690,8 @@ h4{
   height: 179px;
   overflow: hidden;
   position: absolute;
-  top: 16px;
-  left: 16px;
+  top: 21px;
+  left: 21px;
   z-index: -1;
 }
 
@@ -709,6 +709,10 @@ h4{
 
 #web.an .web-scroll{
   animation: move-top-90 15s linear infinite;
+}
+
+#web.mi .web-scroll{
+  animation: move-top 11s linear infinite;
 }
 
 /*----------------------애니메이션----------------------*/
@@ -1367,8 +1371,8 @@ h4{
   }
 
   .mask{
-    width: 413px;
-    height: 240px;
+    width: 408px;
+    height: 230px;
   }
   
   /*konec web*/

@@ -42,6 +42,10 @@ body{
   font-style: normal;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 a:hover,
 .pointer,
 .frame-button > img,

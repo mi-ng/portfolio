@@ -844,7 +844,10 @@ about-wrap-left{
   overflow: hidden;
 }
 
-#portfolio .frame.tb, #portfolio .frame.cc, #portfolio .frame.kn{
+#portfolio .frame.tb, 
+#portfolio .frame.cc, 
+#portfolio .frame.kn,
+#portfolio .frame.mi{
   font-family: "Press Start 2P", 'NeoDunggeunmoPro-Regular', sans-serif;
 }
 
@@ -880,6 +883,10 @@ about-wrap-left{
 
 #portfolio .frame.kn .frame-img{
   background: url(../img/pf_konec_m.png) no-repeat center center / cover;
+}
+
+#portfolio .frame.mi .frame-img{
+  background: url(../img/pf_mimidar_m.png) no-repeat center center / cover;
 }
 
 
@@ -1695,6 +1702,13 @@ about-wrap-left{
   #portfolio .frame.kn .frame-img{
     background: url(../img/pf_konec.png) no-repeat center left / cover;
   }
+
+  #portfolio .frame.mi .frame-img{
+    background: url(../img/pf_mimidar.png) no-repeat center left / cover;
+  }
+
+
+
 
   .sk-f-wrap .sk-img-box {
     width: 10%;
