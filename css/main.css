@@ -123,9 +123,54 @@
   height: 30px;
 }
 
+#intro .main-icon01 .icon-ui:hover img{
+  animation: move-side .15s infinite;
+}
+
+@keyframes move-side {
+  0%{
+    transform: translateX(-3%);
+  }
+  25%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(3%);
+  }
+  75%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-3%);
+  }
+}
+
+@keyframes move-round {
+  0%{
+    transform: translate(-30%, -20%);
+  }
+  25%{
+    transform: translate(25%, -35%);
+  }
+  50%{
+    transform: translate(40%, 5%);
+  }
+  75%{
+    transform: translate(0, 0);
+  }
+  100%{
+    transform: translate(-30%, -20%);
+  }
+  
+}
+
 #intro .main-icon01 .icon-bran{
   width: 30px;
   height: 30px;
+}
+
+#intro .main-icon01 .icon-bran:hover img{
+  animation: move-round 2.5s ease infinite;
 }
 
 #intro .main-icon01 .icon-edi{
@@ -177,6 +222,34 @@
 #intro .main-icon02 .icon-stor{
   width: 23px;
   height: 30px;
+  position: relative;
+}
+
+#intro .main-icon02 .icon-stor .stor-open img{
+  width: 25px;
+  height: 32px;
+}
+
+#intro .main-icon02 .icon-stor .stor-open{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 35px;
+}
+
+#intro .main-icon02 .icon-stor .stor-close{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#intro .main-icon02 .icon-stor:hover .stor-close{
+  display: none;
+}
+
+#intro .main-icon02 .icon-stor:hover .stor-open{
+  display: block;
 }
 
 #intro .main-icon01 img, #intro .main-icon02 img{
@@ -1498,6 +1571,10 @@ about-wrap-left{
     width: 40px;
     height: 40px;
   }
+
+  #intro .main-icon02 .icon-stor .stor-open{
+    height: 45px;
+  }
   
   
   /*about css 시작*/
@@ -1893,6 +1970,10 @@ about-wrap-left{
   #intro .main-icon02 .icon-idea{
     width: 84px;
     height: 70px;
+  }
+
+  #intro .main-icon02 .icon-stor .stor-open{
+    height: 80px;
   }
   
   #intro .main-icon02 .icon-stor{
