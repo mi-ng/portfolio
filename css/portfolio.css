@@ -1404,4 +1404,31 @@ h4{
   #ci .ci-img{
     height: 1200px;
   }
+
+  /*web*/
+  .left{
+    width: 550px;
+    margin: 0 80px;
+  }
+
+  .mask{
+    width: 499px;
+    height: 282px;
+    top: 25px;
+    left: 25px;
+  }
+
+  h3{
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 3rem;
+    margin: 20px 0;
+  }
+
+  #web p{
+    font-size: 1.8rem;
+  }
+
+  .web-fwrap{
+    padding: 100px 0;
+  }
 }
