@@ -299,7 +299,7 @@
 
 #gnb .menu-left{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 65px;
 }
@@ -431,7 +431,7 @@
 
 #about .about-tit-wrap .about-sub-txt{
   font-family: "Noto Sans KR", sans-serif;
-  font-weight: 500;
+  /* font-weight: 500; */
   margin: 0 20px 20px 20px;
   letter-spacing: -1.5px;
   line-height: 1.5;
@@ -537,7 +537,7 @@ about-wrap-left{
 }
 
 #about .about-tmi01 .tmi01.box02 .txt-box{
-  margin-left: 5px;
+  margin-left: 15px;
   margin-top: 20px;
 }
 
@@ -549,14 +549,14 @@ about-wrap-left{
 
 #about .about-tmi01 .tmi01 .txt-box p{
   color: #fff;
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 #about .about-tmi01 .tmi01 span{
   color: #fff;
   margin-left: 5px;
-  margin-right: 5px;
-  font-size: 1.5rem;
+  /* margin-right: 5px; */
+  font-size: 1.4rem;
 }
 
 #about .about-tmi01 .tmi01 span:hover{
@@ -595,8 +595,8 @@ about-wrap-left{
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 15px;
-  right: 25px;
+  top: 13px;
+  right: 16px;
   transform: rotate(15deg);
   /* filter: brightness(10); */
 }
@@ -1011,6 +1011,7 @@ about-wrap-left{
 #portfolio .frame .bar{
   height: 35px;
   background-color: #6660E8;
+  border: 1px solid #6660E8;
   position: relative;
 }
 
@@ -1036,7 +1037,7 @@ about-wrap-left{
   display: flex;
   position: absolute;
   top: 5px;
-  right: 10px;
+  right: 20px;
   justify-content: end;
 }
 
@@ -1431,8 +1432,8 @@ about-wrap-left{
   }*/
 
   #intro .frame{
-    width: 450px;
-    height: 400px;
+    width: 520px;
+    height: 500px;
     border: 3px solid #fff;
   }
 
@@ -1488,9 +1489,9 @@ about-wrap-left{
 
   #intro .main-icon02{
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 70px;
-    width: 650px;
+    width: 520px;
   }
 
   /*full-idea*/
@@ -1529,28 +1530,28 @@ about-wrap-left{
   }
 
   #intro .main-icon01 .icon-pb{
-    width: 59px;
-    height: 40px;
+    width: 60px;
+    height: 50px;
   }
   
   #intro .main-icon01 .icon-ui{
     width: 30px;
-    height: 40px;
+    height: 50px;
   }
   
   #intro .main-icon01 .icon-bran{
-    width: 50px;
-    height: 40px;
+    width: 52px;
+    height: 50px;
   }
   
   #intro .main-icon01 .icon-edi{
-    width: 25px;
-    height: 40px;
+    width: 28px;
+    height: 50px;
   }
   
   #intro .main-icon01 .icon-art{
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 50px;
     position: relative;
   }
   
@@ -1561,17 +1562,17 @@ about-wrap-left{
   }
   
   #intro .main-icon02 .icon-idea{
-    width: 60px;
-    height: 40px;
+    width: auto;
+    height: 50px;
   }
   
   #intro .main-icon02 .icon-stor{
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 50px;
   }
 
   #intro .main-icon02 .icon-stor .stor-open{
-    height: 45px;
+    height: 55px;
   }
   
   
@@ -1604,6 +1605,27 @@ about-wrap-left{
   #about .about-tmi01 .tmi01 {
     width: 175px;
     height: 120px;
+  }
+
+  #about .about-tmi01 .tmi01 .txt-box{
+    margin-left: 14px;
+    margin-top: 20px;
+  }
+
+  #about .about-tmi01 .tmi01.box02 .txt-box{
+    margin-top: 25px;
+  }
+
+  #about .about-tmi01 .tmi01.box03 .txt-box {
+    margin: 20px 0 0 8px;
+  }
+
+  #about .about-tmi01 .tmi01 span{
+    font-size: 1.5rem;
+  }
+
+  #about .about-tmi01 .tmi01.box03 span{
+    font-size: 1.4rem;
   }
 
   .about-wrap-right{
@@ -1687,11 +1709,6 @@ about-wrap-left{
   /*gnb css 시작*/
   #gnb .gnb-inner{
     padding: 0 50px;
-  }
-  
-
-  #gnb .menu-left li:first-child{
-    margin-right: 60px;
   }
 
   #gnb .menu-left li:first-child a img{
@@ -1796,7 +1813,7 @@ about-wrap-left{
 
   #portfolio .frame .frame-img{
     width: 100%;
-    height: 420px;
+    height: 100%;
 
   }
 
@@ -1878,16 +1895,19 @@ about-wrap-left{
     padding: 0 40px 65px;
   }
 
+  #intro .frame{
+    width: 500px;
+    height: 420px;
+    border: 3px solid #fff;
+  }
+
   #intro .frame-wrap{
     width: 55%;
     top: 50%;
     transform: translate(-50%, -50%);
     left: 52%;
   }
-
-  #intro .frame-wrap p{
-    font-size: 3.5rem;
-  }
+  
 
   #intro .main-icon01{
     top: 50%;
@@ -2011,7 +2031,9 @@ about-wrap-left{
 
   #about .about-tit-wrap .about-sub-txt {
     letter-spacing: 1px;
-}
+    font-size: 1.7rem;
+    font-weight: normal;
+  }
 
   #about .about-me .arrow {
     width: 42px;
@@ -2142,6 +2164,7 @@ about-wrap-left{
 
   #gnb .menu-left li:first-child{
     padding-right: 0;
+    margin-right: 60px;
   }
 
   #gnb .menu-left li a img{
@@ -2298,9 +2321,19 @@ about-wrap-left{
     padding: 0 80px 65px;
   }
 
+  #intro .frame{
+    width: 650px;
+    height: 500px;
+    border: 3px solid #fff;
+  }
+
   #about .about-tmi01 {
-    top: 505px;
-    left: 450px;
+    top: 570px;
+    left: 380px;
+  }
+
+  #about .about-tit-wrap .about-sub-txt {
+    font-size: 1.8rem;
   }
 
   #portfolio .popup-frame{
@@ -2355,5 +2388,15 @@ about-wrap-left{
 
   .sk-txt-box{
     margin: 0 0 15px 30px;
+  }
+
+  #portfolio .frame{
+    width: 95%;
+    height: 550px;
+  }
+
+  #portfolio .frame .bar .bar-tit span{
+    color: #fff;
+    font-size: 1.8rem;
   }
 }
